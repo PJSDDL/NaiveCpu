@@ -1,0 +1,27 @@
+#Start recording tcl command: 4/30/2026 10:28:04
+#Project Location: E:/CPUv1; Project name: CPUv1
+prj_project new -name "CPUv1" -impl "cpu_v1" -dev LCMXO2-4000HC-5FG484C -synthesis "lse"
+prj_project save
+prj_src add "E:/CPUv1/cpu.v"
+prj_src add "E:/CPUv1/sim.v"
+prj_src syn_sim -src "E:/CPUv1/sim.v" SimulateOnly
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/rom.v"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/rom.ipx"
+prj_run Synthesis -impl cpu_v1 -task Lattice_Synthesis
+prj_run Synthesis -impl cpu_v1 -task Lattice_Synthesis
+prj_run Synthesis -impl cpu_v1 -task Lattice_Synthesis
+prj_src remove "E:/CPUv1/rom.v"
+prj_run Synthesis -impl cpu_v1 -task Lattice_Synthesis
+prj_run Map -impl cpu_v1
+prj_run PAR -impl cpu_v1 -task PARTrace
+prj_run PAR -impl cpu_v1
+prj_run Export -impl cpu_v1
+prj_run PAR -impl cpu_v1
+#Stop recording: 4/30/2026 16:18:43

@@ -1,0 +1,44 @@
+[ActiveSupport MAP]
+Device = LCMXO2-4000HC;
+Package = FPBGA484;
+Performance = 5;
+LUTS_avail = 4320;
+LUTS_used = 122;
+FF_avail = 4599;
+FF_used = 49;
+INPUT_LVCMOS25 = 2;
+OUTPUT_LVCMOS25 = 8;
+IO_avail = 279;
+IO_used = 10;
+EBR_avail = 10;
+EBR_used = 2;
+; Begin EBR Section
+Instance_Name = ram_s/RAM_0_0_0;
+Type = DP8KC;
+Width_A = 8;
+Depth_A = 256;
+REGMODE_A = NOREG;
+REGMODE_B = NOREG;
+RESETMODE = ASYNC;
+ASYNC_RESET_RELEASE = SYNC;
+WRITEMODE_A = NORMAL;
+WRITEMODE_B = NORMAL;
+GSR = ENABLED;
+MEM_INIT_FILE = INIT_ALL_0s;
+MEM_LPC_FILE = RAM.lpc;
+Instance_Name = rom_s/rom_0_0_0;
+Type = DP8KC;
+Width_A = 9;
+Width_B = 7;
+Depth_A = 256;
+Depth_B = 256;
+REGMODE_A = NOREG;
+REGMODE_B = NOREG;
+RESETMODE = ASYNC;
+ASYNC_RESET_RELEASE = SYNC;
+WRITEMODE_A = NORMAL;
+WRITEMODE_B = NORMAL;
+GSR = ENABLED;
+MEM_INIT_FILE = rom.mem;
+MEM_LPC_FILE = rom.lpc;
+; End EBR Section

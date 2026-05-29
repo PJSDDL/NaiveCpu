@@ -1,0 +1,848 @@
+
+synthesis -f "CPUv1_cpu_v1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Thu May 28 16:36:30 2026
+
+
+Command Line:  synthesis -f CPUv1_cpu_v1_lattice.synproj -gui -msgset E:/CPUv1/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is FPBGA484.
+The -d option is LCMXO2-4000HC.
+Using package FPBGA484.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : FPBGA484
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = computer.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/CPUv1 (searchpath added)
+-p E:/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p E:/CPUv1/cpu_v1 (searchpath added)
+-p E:/CPUv1 (searchpath added)
+Verilog design file = E:/CPUv1/cpu.v
+Verilog design file = E:/CPUv1/reg.v
+Verilog design file = E:/CPUv1/ALU.v
+Verilog design file = E:/CPUv1/clk_gen.v
+Verilog design file = E:/CPUv1/computer.v
+Verilog design file = E:/CPUv1/rom.v
+Verilog design file = E:/CPUv1/RAM.v
+NGD file = CPUv1_cpu_v1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+Analyzing Verilog file e:/cpuv1/cpu.v. VERI-1482
+Analyzing Verilog file e:/cpuv1/reg.v. VERI-1482
+Analyzing Verilog file e:/cpuv1/alu.v. VERI-1482
+Analyzing Verilog file e:/cpuv1/clk_gen.v. VERI-1482
+Analyzing Verilog file e:/cpuv1/computer.v. VERI-1482
+Analyzing Verilog file e:/cpuv1/rom.v. VERI-1482
+Analyzing Verilog file e:/cpuv1/ram.v. VERI-1482
+Analyzing Verilog file E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Top module name (Verilog): computer
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/computer.v(1): " arg1="computer" arg2="e:/cpuv1/computer.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/cpu.v(1): " arg1="cpu" arg2="e:/cpuv1/cpu.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/clk_gen.v(1): " arg1="clk_gen" arg2="e:/cpuv1/clk_gen.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/alu.v(1): " arg1="alu" arg2="e:/cpuv1/alu.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/reg.v(1): " arg1="reg_8b" arg2="e:/cpuv1/reg.v" arg3="1"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/reg.v(18): " arg1="reg_1b" arg2="e:/cpuv1/reg.v" arg3="18"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/reg.v(35): " arg1="counter" arg2="e:/cpuv1/reg.v" arg3="35"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/rom.v(8): " arg1="rom" arg2="e:/cpuv1/rom.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): " arg1="VHI" arg2="E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1120"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): " arg1="VLO" arg2="E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1124"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC_renamed_due_excessive_length_1" arg2="E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="e:/cpuv1/ram.v(8): " arg1="RAM" arg2="e:/cpuv1/ram.v" arg3="8"  />
+    <postMsg mid="35901018" type="Info"    dynamic="2" navigation="2" arg0="E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): " arg1="DP8KC(CSDECODE_B=&quot;0b111&quot;,RESETMODE=&quot;ASYNC&quot;)" arg2="E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v" arg3="1291"  />
+    <postMsg mid="35931002" type="Warning" dynamic="2" navigation="2" arg0="e:/cpuv1/computer.v(33): " arg1="rst" arg2="e:/cpuv1/computer.v" arg3="33"  />
+Last elaborated design is computer()
+Loading NGL library 'E:/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'E:/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: E:/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = computer.
+######## Missing driver on net rst. Patching with GND.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\uut_cpu/clk_gen_uut/statu" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 00 -> 0001
+
+ 01 -> 0010
+
+ 10 -> 0100
+
+ 11 -> 1000
+
+
+
+
+GSR instance connected to net rst_n_c_0.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in computer_drc.log.
+Loading NGL library 'E:/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'E:/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    169 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file CPUv1_cpu_v1.ngd.
+
+################### Begin Area Report (computer)######################
+Number of register bits => 49 of 5157 (0 % )
+CCU2D => 18
+DP8KC => 2
+FD1P3AX => 1
+FD1P3IX => 1
+FD1S1A => 8
+FD1S1D => 8
+FD1S1I => 1
+FD1S3AX => 13
+FD1S3AY => 1
+FD1S3BX => 8
+FD1S3DX => 8
+GSR => 1
+IB => 2
+LUT4 => 78
+OB => 8
+PFUMX => 8
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 15
+  Net : uut_cpu/clk_gen_uut/rom_clk_0, loads : 19
+  Net : uut_cpu/alu_uut/C_7__N_70, loads : 8
+  Net : uut_cpu/clk_X_0, loads : 8
+  Net : clk_in_c_0, loads : 7
+  Net : uut_cpu/PC/d_out_7__N_121, loads : 2
+  Net : uut_cpu/PC/d_out_7__N_117, loads : 2
+  Net : uut_cpu/PC/d_out_7__N_115, loads : 2
+  Net : uut_cpu/clk_gen_uut/ram_clk_0, loads : 1
+  Net : uut_cpu/PC/d_out_7__N_113, loads : 2
+  Net : uut_cpu/PC/d_out_7__N_119, loads : 2
+  Net : uut_cpu/PC/d_out_7__N_111, loads : 2
+  Net : uut_cpu/PC/d_out_7__N_104, loads : 2
+  Net : uut_cpu/PC/d_out_7__N_109, loads : 2
+  Net : uut_cpu/clk_carry_0, loads : 1
+  Net : uut_cpu/alu_uut/carry_out_0__N_73, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : uut_cpu/clk_gen_uut/clk_in_c_0_enable_2, loads : 2
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : rom_s/rom_out_8, loads : 24
+  Net : rom_s/rom_out_11, loads : 23
+  Net : rst_n_c_0, loads : 18
+  Net : rom_s/rom_out_9, loads : 18
+  Net : uut_cpu/PC/d_out_7__N_105, loads : 16
+  Net : rom_s/rom_out_10, loads : 10
+  Net : n374, loads : 8
+  Net : uut_cpu/alu_uut/C_7_N_31_7, loads : 8
+  Net : uut_cpu/X/data_out_c_7, loads : 6
+  Net : uut_cpu/X/data_out_c_6, loads : 6
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk5 [get_nets                          |             |             |
+\uut_cpu/alu_uut/C_7__N_70]             |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets \uut_cpu/clk_carry[0]]   |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets clk_in_c_0]              |  200.000 MHz|  160.000 MHz|     4 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets ram_clk[0]]              |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets rom_clk[0]]              |  200.000 MHz|  100.020 MHz|     4 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets \uut_cpu/clk_X[0]]       |  200.000 MHz|  154.178 MHz|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+3 constraints not met.
+
+
+Peak Memory Usage: 58.754  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.172  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-4000HC -t FPBGA484 -s 5 -oc Commercial   "CPUv1_cpu_v1.ngd" -o "CPUv1_cpu_v1_map.ncd" -pr "CPUv1_cpu_v1.prf" -mp "CPUv1_cpu_v1.mrp" -lpf "E:/CPUv1/cpu_v1/CPUv1_cpu_v1.lpf" -lpf "E:/CPUv1/CPUv1.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: CPUv1_cpu_v1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="FPBGA484"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCFPBGA484, Performance used: 5.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: E:/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:     49 out of  5157 (1%)
+      PFU registers:           49 out of  4320 (1%)
+      PIO registers:            0 out of   837 (0%)
+   Number of SLICEs:        65 out of  2160 (3%)
+      SLICEs as Logic/ROM:     65 out of  2160 (3%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         18 out of  2160 (1%)
+   Number of LUT4s:        122 out of  4320 (3%)
+      Number used as logic LUTs:         86
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       36
+      Number used as shift registers:     0
+   Number of PIO sites used: 10 + 4(JTAG) out of 279 (5%)
+   Number of block RAMs:  2 out of 10 (20%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  15
+     Net ram_clk_0: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/clk_gen_uut/clk_step2_0__34 )
+     Net clk_in_c_0: 5 loads, 5 rising, 0 falling (Driver: PIO clk_in[0] )
+     Net rom_clk[0]: 18 loads, 18 rising, 0 falling (Driver: uut_cpu/clk_gen_uut/clk_step1_0__33 )
+     Net uut_cpu/clk_X[0]: 4 loads, 4 rising, 0 falling (Driver: uut_cpu/i40_3_lut )
+     Net uut_cpu/clk_carry[0]: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/clk_step3_0__I_0_2_lut )
+     Net uut_cpu/alu_uut/C_7__N_70: 4 loads, 4 rising, 0 falling (Driver: uut_cpu/alu_uut/i239_2_lut )
+     Net uut_cpu/alu_uut/carry_out_0__N_73: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/alu_uut/i234_2_lut )
+     Net uut_cpu/PC/d_out_7__N_109: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/PC/d_out_7__N_105_I_0_52_2_lut_3_lut )
+     Net uut_cpu/PC/d_out_7__N_113: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/PC/d_out_7__N_105_I_0_54_2_lut_3_lut )
+     Net uut_cpu/PC/d_out_7__N_111: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/PC/d_out_7__N_105_I_0_53_2_lut_3_lut )
+     Net uut_cpu/PC/d_out_7__N_115: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/PC/d_out_7__N_105_I_0_55_2_lut_3_lut )
+     Net uut_cpu/PC/d_out_7__N_121: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/PC/d_out_7__N_105_I_0_58_2_lut_3_lut )
+     Net uut_cpu/PC/d_out_7__N_119: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/PC/d_out_7__N_105_I_0_57_2_lut_3_lut )
+     Net uut_cpu/PC/d_out_7__N_117: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/PC/d_out_7__N_105_I_0_56_2_lut_3_lut )
+     Net uut_cpu/PC/d_out_7__N_104: 1 loads, 1 rising, 0 falling (Driver: uut_cpu/PC/d_out_7__I_0_66_2_lut_3_lut )
+   Number of Clock Enables:  1
+     Net uut_cpu/clk_gen_uut/clk_in_c_0_enable_2: 2 loads, 2 LSLICEs
+   Number of LSRs:  18
+     Net uut_cpu/clk_gen_uut/clk_step1_0__N_6: 1 loads, 1 LSLICEs
+     Net uut_cpu/alu_uut/n252: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_138: 2 loads, 2 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_109: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_113: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_129: 2 loads, 2 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_144: 2 loads, 2 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_111: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_135: 2 loads, 2 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_115: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_121: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_119: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_141: 2 loads, 2 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_117: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_104: 1 loads, 1 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_123: 2 loads, 2 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_132: 2 loads, 2 LSLICEs
+     Net uut_cpu/PC/d_out_7__N_126: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net rom_out_8: 25 loads
+     Net rom_out_11: 24 loads
+     Net rom_out_9: 19 loads
+     Net rst_n_c_0: 18 loads
+     Net uut_cpu/PC/d_out_7__N_105: 16 loads
+     Net rom_out_10: 11 loads
+     Net data_out_c_0: 8 loads
+     Net data_out_c_1: 8 loads
+     Net data_out_c_2: 8 loads
+     Net data_out_c_3: 8 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+INFO: Design contains EBR with GSR enabled. The GSR is only applicable for output registers except FIFO. 
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 36 MB
+
+Dumping design to file CPUv1_cpu_v1_map.ncd.
+
+ncd2vdb "CPUv1_cpu_v1_map.ncd" ".vdbs/CPUv1_cpu_v1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: E:/diamond/3.13/ispfpga.
+
+trce -f "CPUv1_cpu_v1.mt" -o "CPUv1_cpu_v1.tw1" "CPUv1_cpu_v1_map.ncd" "CPUv1_cpu_v1.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file cpuv1_cpu_v1_map.ncd.
+Design name: computer
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     FPBGA484
+Performance: 5
+Loading device for application trce from file 'xo2c4000.nph' in environment: E:/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Thu May 28 16:36:31 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CPUv1_cpu_v1.tw1 -gui -msgset E:/CPUv1/promote.xml CPUv1_cpu_v1_map.ncd CPUv1_cpu_v1.prf 
+Design file:     cpuv1_cpu_v1_map.ncd
+Preference file: cpuv1_cpu_v1.prf
+Device,speed:    LCMXO2-4000HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 870  Score: 1000578230
+Cumulative negative slack: 1000578230
+
+Constraints cover 2132 paths, 8 nets, and 476 connections (92.97% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Thu May 28 16:36:31 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CPUv1_cpu_v1.tw1 -gui -msgset E:/CPUv1/promote.xml CPUv1_cpu_v1_map.ncd CPUv1_cpu_v1.prf 
+Design file:     cpuv1_cpu_v1_map.ncd
+Preference file: cpuv1_cpu_v1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2132 paths, 8 nets, and 476 connections (92.97% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 870 (setup), 0 (hold)
+Score: 1000578230 (setup), 0 (hold)
+Cumulative negative slack: 1000578230 (1000578230+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 60 MB
+
+
+mpartrce -p "CPUv1_cpu_v1.p2t" -f "CPUv1_cpu_v1.p3t" -tf "CPUv1_cpu_v1.pt" "CPUv1_cpu_v1_map.ncd" "CPUv1_cpu_v1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "CPUv1_cpu_v1_map.ncd"
+Thu May 28 16:36:31 2026
+
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset E:/CPUv1/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 CPUv1_cpu_v1_map.ncd CPUv1_cpu_v1.dir/5_1.ncd CPUv1_cpu_v1.prf
+Preference file: CPUv1_cpu_v1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file CPUv1_cpu_v1_map.ncd.
+Design name: computer
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     FPBGA484
+Performance: 5
+Loading device for application par from file 'xo2c4000.nph' in environment: E:/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   10+4(JTAG)/280     5% used
+                  10+4(JTAG)/279     5% bonded
+
+   SLICE             65/2160          3% used
+
+   GSR                1/1           100% used
+   EBR                2/10           20% used
+
+
+INFO: Design contains EBR with ASYNC Reset Mode that has a limitation: The use of the EBR block asynchronous reset requires that certain timing be met between the clock and the reset within the memory block. See the device specific data sheet for additional details.
+Number of Signals: 193
+Number of Connections: 512
+    <postMsg mid="61001101" type="Warning" dynamic="0" navigation="0"  />
+
+Pin Constraint Summary:
+   0 out of 10 pins locked (0% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    rom_clk[0] (driver: uut_cpu/clk_gen_uut/SLICE_23, clk load #: 18)
+
+
+The following 1 signal is selected to use the secondary clock routing resources:
+    clk_in_c_0 (driver: clk_in[0], clk load #: 5, sr load #: 0, ce load #: 0)
+
+Signal rst_n_c_0 is selected as Global Set/Reset.
+.
+Starting Placer Phase 0.
+..............
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+....................
+Placer score = 24038201.
+Finished Placer Phase 1.  REAL time: 2 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  23983062
+Finished Placer Phase 2.  REAL time: 2 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 1 out of 8 (12%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "rom_clk[0]" from Q0 on comp "uut_cpu/clk_gen_uut/SLICE_23" on site "R3C15D", clk load = 18
+  SECONDARY "clk_in_c_0" from comp "clk_in[0]" on CLK_PIN site "V3 (PL17A)", clk load = 5, ce load = 0, sr load = 0
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 1 out of 8 (12%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   10 + 4(JTAG) out of 280 (5.0%) PIO sites used.
+   10 + 4(JTAG) out of 279 (5.0%) bonded PIO sites used.
+   Number of PIO comps: 10; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 71 (  0%) | -          | -         |
+| 1        | 0 / 68 (  0%) | -          | -         |
+| 2        | 0 / 72 (  0%) | -          | -         |
+| 3        | 1 / 24 (  4%) | 2.5V       | -         |
+| 4        | 8 / 16 ( 50%) | 2.5V       | -         |
+| 5        | 1 / 28 (  3%) | 2.5V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 1 secs 
+
+Dumping design to file CPUv1_cpu_v1.dir/5_1.ncd.
+
+0 connections routed; 512 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=ram_clk_0 loads=1 clock_loads=1&#xA;   Signal=uut_cpu/clk_X[0] loads=4 clock_loads=4&#xA;   Signal=uut_cpu/clk_carry[0] loads=1 clock_loads=1&#xA;   Signal=uut_cpu/alu_uut/C_7__N_70 loads=4 clock_loads=4&#xA;   Signal=uut_cpu/alu_uut/carry_out_0__N_73 loads=1 clock_loads=1&#xA;   Signal=uut_cpu/PC/d_out_7__N_109 loads=2 clock_loads=   ....   l=uut_cpu/PC/d_out_7__N_119 loads=2 clock_loads=1&#xA;   Signal=uut_cpu/PC/d_out_7__N_117 loads=2 clock_loads=1&#xA;   Signal=uut_cpu/PC/d_out_7__N_104 loads=2 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 2 secs 
+
+Start NBR router at 16:36:33 05/28/26
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+Start NBR special constraint process at 16:36:33 05/28/26
+
+Start NBR section for initial routing at 16:36:33 05/28/26
+Level 1, iteration 1
+4(0.00%) conflicts; 388(75.78%) untouched conns; 437742354 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5092.014ns/-437742.354ns; real time: 2 secs 
+Level 2, iteration 1
+1(0.00%) conflict; 380(74.22%) untouched conns; 441363129 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5162.344ns/-441363.130ns; real time: 2 secs 
+Level 3, iteration 1
+1(0.00%) conflict; 377(73.63%) untouched conns; 437294765 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -5049.170ns/-437294.766ns; real time: 2 secs 
+Level 4, iteration 1
+31(0.01%) conflicts; 0(0.00%) untouched conn; 431562546 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -4957.014ns/-431562.547ns; real time: 2 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 16:36:33 05/28/26
+Level 4, iteration 1
+25(0.01%) conflicts; 0(0.00%) untouched conn; 761570719 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -11482.500ns/-761570.720ns; real time: 2 secs 
+Level 4, iteration 2
+16(0.01%) conflicts; 0(0.00%) untouched conn; 688657643 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -11880.888ns/-688657.643ns; real time: 2 secs 
+Level 4, iteration 3
+10(0.00%) conflicts; 0(0.00%) untouched conn; 686326600 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -11887.363ns/-686326.600ns; real time: 2 secs 
+Level 4, iteration 4
+7(0.00%) conflicts; 0(0.00%) untouched conn; 686326600 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -11887.363ns/-686326.600ns; real time: 2 secs 
+Level 4, iteration 5
+7(0.00%) conflicts; 0(0.00%) untouched conn; 695035287 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -12075.950ns/-695035.287ns; real time: 2 secs 
+Level 4, iteration 6
+5(0.00%) conflicts; 0(0.00%) untouched conn; 695035287 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -12075.950ns/-695035.287ns; real time: 2 secs 
+Level 4, iteration 7
+4(0.00%) conflicts; 0(0.00%) untouched conn; 702300505 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -12236.208ns/-702300.505ns; real time: 2 secs 
+Level 4, iteration 8
+4(0.00%) conflicts; 0(0.00%) untouched conn; 702300505 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -12236.208ns/-702300.505ns; real time: 2 secs 
+Level 4, iteration 9
+2(0.00%) conflicts; 0(0.00%) untouched conn; 702389367 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -12236.208ns/-702389.367ns; real time: 2 secs 
+Level 4, iteration 10
+0(0.00%) conflict; 0(0.00%) untouched conn; 702389367 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -12236.208ns/-702389.367ns; real time: 2 secs 
+
+Start NBR section for performance tuning (iteration 1) at 16:36:33 05/28/26
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 702389367 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -12236.208ns/-702389.367ns; real time: 2 secs 
+
+Start NBR section for re-routing at 16:36:33 05/28/26
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 681834583 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -11825.265ns/-681834.583ns; real time: 2 secs 
+
+Start NBR section for post-routing at 16:36:33 05/28/26
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 388 (75.78%)
+  Estimated worst slack<setup> : -11825.265ns
+  Timing score<setup> : 1545962756
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=ram_clk_0 loads=1 clock_loads=1&#xA;   Signal=uut_cpu/clk_X[0] loads=4 clock_loads=4&#xA;   Signal=uut_cpu/clk_carry[0] loads=1 clock_loads=1&#xA;   Signal=uut_cpu/alu_uut/C_7__N_70 loads=4 clock_loads=4&#xA;   Signal=uut_cpu/alu_uut/carry_out_0__N_73 loads=1 clock_loads=1&#xA;   Signal=uut_cpu/PC/d_out_7__N_109 loads=2 clock_loads=   ....   l=uut_cpu/PC/d_out_7__N_119 loads=2 clock_loads=1&#xA;   Signal=uut_cpu/PC/d_out_7__N_117 loads=2 clock_loads=1&#xA;   Signal=uut_cpu/PC/d_out_7__N_104 loads=2 clock_loads=1"  />
+
+Total CPU time 2 secs 
+Total REAL time: 2 secs 
+Completely routed.
+End of route.  512 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 673, hold timing errors: 547
+
+Timing score: 1545962756 
+
+Dumping design to file CPUv1_cpu_v1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -11808.882
+PAR_SUMMARY::Timing score<setup/<ns>> = 1545962.756
+PAR_SUMMARY::Worst  slack<hold /<ns>> = -3.425
+PAR_SUMMARY::Timing score<hold /<ns>> = 673.601
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 2 secs 
+Total REAL time to completion: 2 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "CPUv1_cpu_v1.pt" -o "CPUv1_cpu_v1.twr" "CPUv1_cpu_v1.ncd" "CPUv1_cpu_v1.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file cpuv1_cpu_v1.ncd.
+Design name: computer
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     FPBGA484
+Performance: 5
+Loading device for application trce from file 'xo2c4000.nph' in environment: E:/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Thu May 28 16:36:34 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o CPUv1_cpu_v1.twr -gui -msgset E:/CPUv1/promote.xml CPUv1_cpu_v1.ncd CPUv1_cpu_v1.prf 
+Design file:     cpuv1_cpu_v1.ncd
+Preference file: cpuv1_cpu_v1.prf
+Device,speed:    LCMXO2-4000HC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 848  Score: 1545962756
+Cumulative negative slack: 1545962756
+
+Constraints cover 2132 paths, 8 nets, and 478 connections (93.36% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Thu May 28 16:36:34 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o CPUv1_cpu_v1.twr -gui -msgset E:/CPUv1/promote.xml CPUv1_cpu_v1.ncd CPUv1_cpu_v1.prf 
+Design file:     cpuv1_cpu_v1.ncd
+Preference file: cpuv1_cpu_v1.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 547  Score: 673601
+Cumulative negative slack: 673601
+
+Constraints cover 2132 paths, 8 nets, and 478 connections (93.36% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 848 (setup), 547 (hold)
+Score: 1545962756 (setup), 673601 (hold)
+Cumulative negative slack: 1546636357 (1545962756+673601)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 58 MB
+

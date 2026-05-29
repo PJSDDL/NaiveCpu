@@ -1,0 +1,2439 @@
+<top name = "computer"  library = "work"  arch = ""  entry = "Verilog">
+
+<clocks>
+    <clockitem name = "clk_in[0]"  type = "port" />
+    <clockitem name = "rom_clk[0]"  type = "net" />
+    <clockitem name = "ram_clk[0]"  type = "net" />
+    <clockitem name = "uut_cpu/clk_X[0]"  type = "net" />
+    <clockitem name = "uut_cpu/clk_carry[0]"  type = "net" />
+</clocks>
+
+<!--
+    //=============================================================
+    //  Number of Clocks processed: 5
+    //
+    //  If a clock cannot be found in the top level pins section,
+    //  that means it is an internal clock.
+    //
+    //=============================================================
+-->
+
+<library name = "work">
+
+<unit name = "computer">
+
+    <!--
+        Top Level Pins: 10
+    -->
+
+    <pins>
+        <pitem  name = "clk_in[0]"  direction = "in"  />
+        <pitem  name = "rst_n[0]"  direction = "in"  />
+        <pitem  name = "data_out[7]"  direction = "out"  />
+        <pitem  name = "data_out[6]"  direction = "out"  />
+        <pitem  name = "data_out[5]"  direction = "out"  />
+        <pitem  name = "data_out[4]"  direction = "out"  />
+        <pitem  name = "data_out[3]"  direction = "out"  />
+        <pitem  name = "data_out[2]"  direction = "out"  />
+        <pitem  name = "data_out[1]"  direction = "out"  />
+        <pitem  name = "data_out[0]"  direction = "out"  />
+    </pins>
+
+    <!--
+        Instances in netlist: 109
+    -->
+
+    <instance  name = "uut_cpu/clk_step3_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rom_out[12]"  />
+        <nitem  name = "uut_cpu/clk_step3[0]"  />
+        <nitem  name = "uut_cpu/clk_carry[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_step3_0__I_0_13"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rom_out[15]"  />
+        <nitem  name = "uut_cpu/clk_step3[0]"  />
+        <nitem  name = "uut_cpu/clk_X_0__N_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/data_in_7__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_in[7]"  />
+        <nitem  name = "data_in[6]"  />
+        <nitem  name = "data_in[5]"  />
+        <nitem  name = "data_in[4]"  />
+        <nitem  name = "data_in[3]"  />
+        <nitem  name = "data_in[2]"  />
+        <nitem  name = "data_in[1]"  />
+        <nitem  name = "data_in[0]"  />
+        <nitem  name = "rom_out[11]"  />
+        <nitem  name = "rom_out[7]"  />
+        <nitem  name = "rom_out[6]"  />
+        <nitem  name = "rom_out[5]"  />
+        <nitem  name = "rom_out[4]"  />
+        <nitem  name = "rom_out[3]"  />
+        <nitem  name = "rom_out[2]"  />
+        <nitem  name = "rom_out[1]"  />
+        <nitem  name = "rom_out[0]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[7]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[6]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[5]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[4]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[3]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[2]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[1]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rom_s/scuba_vhi_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rom_s/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ram_s/scuba_vhi_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ram_s/scuba_vhi"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rst_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rst"  />
+        <nitem  name = "rst_N_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_X_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_X[0]"  />
+        <nitem  name = "uut_cpu/clk_carry[0]"  />
+        <nitem  name = "uut_cpu/clk_X_0__N_5"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_step3_0__I_0_12"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rom_out[14]"  />
+        <nitem  name = "uut_cpu/clk_step3[0]"  />
+        <nitem  name = "uut_cpu/PC_load_0__N_3"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/data_out_7__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/pwr"  />
+        <nitem  name = "data_out[7]"  />
+        <nitem  name = "data_out[6]"  />
+        <nitem  name = "data_out[5]"  />
+        <nitem  name = "data_out[4]"  />
+        <nitem  name = "data_out[3]"  />
+        <nitem  name = "data_out[2]"  />
+        <nitem  name = "data_out[1]"  />
+        <nitem  name = "data_out[0]"  />
+        <nitem  name = "uut_cpu/PC_load_0__N_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC_load_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC_load[0]"  />
+        <nitem  name = "uut_cpu/PC_load_0__N_3"  />
+        <nitem  name = "uut_cpu/PC_load_0__N_4"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rom_s/scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rom_s/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "rom_s/rom_0_0_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "ADA10"  direction = "in"  />
+        <pitem  name = "ADB10"  direction = "in"  />
+        <pitem  name = "ADA9"  direction = "in"  />
+        <pitem  name = "ADB9"  direction = "in"  />
+        <pitem  name = "ADA8"  direction = "in"  />
+        <pitem  name = "ADB8"  direction = "in"  />
+        <pitem  name = "ADA7"  direction = "in"  />
+        <pitem  name = "ADB7"  direction = "in"  />
+        <pitem  name = "ADA6"  direction = "in"  />
+        <pitem  name = "ADB6"  direction = "in"  />
+        <pitem  name = "ADA5"  direction = "in"  />
+        <pitem  name = "ADB5"  direction = "in"  />
+        <pitem  name = "ADA4"  direction = "in"  />
+        <pitem  name = "ADB4"  direction = "in"  />
+        <pitem  name = "ADA3"  direction = "in"  />
+        <pitem  name = "ADB3"  direction = "in"  />
+        <pitem  name = "CLKA"  direction = "in"  />
+        <pitem  name = "CLKB"  direction = "in"  />
+        <pitem  name = "CEA"  direction = "in"  />
+        <pitem  name = "OCEA"  direction = "in"  />
+        <pitem  name = "CEB"  direction = "in"  />
+        <pitem  name = "OCEB"  direction = "in"  />
+        <pitem  name = "RSTA"  direction = "in"  />
+        <pitem  name = "RSTB"  direction = "in"  />
+        <pitem  name = "DOB6"  direction = "out"  />
+        <pitem  name = "DOB5"  direction = "out"  />
+        <pitem  name = "DOB4"  direction = "out"  />
+        <pitem  name = "DOB3"  direction = "out"  />
+        <pitem  name = "DOB2"  direction = "out"  />
+        <pitem  name = "DOB1"  direction = "out"  />
+        <pitem  name = "DOB0"  direction = "out"  />
+        <pitem  name = "DOA8"  direction = "out"  />
+        <pitem  name = "DOA7"  direction = "out"  />
+        <pitem  name = "DOA6"  direction = "out"  />
+        <pitem  name = "DOA5"  direction = "out"  />
+        <pitem  name = "DOA4"  direction = "out"  />
+        <pitem  name = "DOA3"  direction = "out"  />
+        <pitem  name = "DOA2"  direction = "out"  />
+        <pitem  name = "DOA1"  direction = "out"  />
+        <pitem  name = "DOA0"  direction = "out"  />
+        <pitem  name = "ADB12"  direction = "in"  />
+        <pitem  name = "DIA8"  direction = "in"  />
+        <pitem  name = "DIA7"  direction = "in"  />
+        <pitem  name = "DIA6"  direction = "in"  />
+        <pitem  name = "DIA5"  direction = "in"  />
+        <pitem  name = "DIA4"  direction = "in"  />
+        <pitem  name = "DIA3"  direction = "in"  />
+        <pitem  name = "DIA2"  direction = "in"  />
+        <pitem  name = "DIA1"  direction = "in"  />
+        <pitem  name = "DIA0"  direction = "in"  />
+        <pitem  name = "ADA12"  direction = "in"  />
+        <pitem  name = "ADA11"  direction = "in"  />
+        <pitem  name = "ADA2"  direction = "in"  />
+        <pitem  name = "ADA1"  direction = "in"  />
+        <pitem  name = "ADA0"  direction = "in"  />
+        <pitem  name = "WEA"  direction = "in"  />
+        <pitem  name = "CSA2"  direction = "in"  />
+        <pitem  name = "CSA1"  direction = "in"  />
+        <pitem  name = "CSA0"  direction = "in"  />
+        <pitem  name = "DIB8"  direction = "in"  />
+        <pitem  name = "DIB7"  direction = "in"  />
+        <pitem  name = "DIB6"  direction = "in"  />
+        <pitem  name = "DIB5"  direction = "in"  />
+        <pitem  name = "DIB4"  direction = "in"  />
+        <pitem  name = "DIB3"  direction = "in"  />
+        <pitem  name = "DIB2"  direction = "in"  />
+        <pitem  name = "DIB1"  direction = "in"  />
+        <pitem  name = "DIB0"  direction = "in"  />
+        <pitem  name = "ADB11"  direction = "in"  />
+        <pitem  name = "ADB2"  direction = "in"  />
+        <pitem  name = "ADB1"  direction = "in"  />
+        <pitem  name = "ADB0"  direction = "in"  />
+        <pitem  name = "WEB"  direction = "in"  />
+        <pitem  name = "CSB2"  direction = "in"  />
+        <pitem  name = "CSB1"  direction = "in"  />
+        <pitem  name = "CSB0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rom_address_out[7]"  />
+        <nitem  name = "rom_address_out[6]"  />
+        <nitem  name = "rom_address_out[5]"  />
+        <nitem  name = "rom_address_out[4]"  />
+        <nitem  name = "rom_address_out[3]"  />
+        <nitem  name = "rom_address_out[2]"  />
+        <nitem  name = "rom_address_out[1]"  />
+        <nitem  name = "rom_address_out[0]"  />
+        <nitem  name = "rom_clk[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "rst_N_2"  />
+        <nitem  name = "rom_out[15]"  />
+        <nitem  name = "rom_out[14]"  />
+        <nitem  name = "rom_out[13]"  />
+        <nitem  name = "rom_out[12]"  />
+        <nitem  name = "rom_out[11]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "rom_out[7]"  />
+        <nitem  name = "rom_out[6]"  />
+        <nitem  name = "rom_out[5]"  />
+        <nitem  name = "rom_out[4]"  />
+        <nitem  name = "rom_out[3]"  />
+        <nitem  name = "rom_out[2]"  />
+        <nitem  name = "rom_out[1]"  />
+        <nitem  name = "rom_out[0]"  />
+        <nitem  name = "rom_s/scuba_vhi"  />
+        <nitem  name = "rom_s/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ram_s/scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "Z"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ram_s/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "ram_s/RAM_0_0_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "CLKA"  direction = "in"  />
+        <pitem  name = "CEA"  direction = "in"  />
+        <pitem  name = "OCEA"  direction = "in"  />
+        <pitem  name = "RSTA"  direction = "in"  />
+        <pitem  name = "WEA"  direction = "in"  />
+        <pitem  name = "ADA10"  direction = "in"  />
+        <pitem  name = "ADA9"  direction = "in"  />
+        <pitem  name = "ADA8"  direction = "in"  />
+        <pitem  name = "ADA7"  direction = "in"  />
+        <pitem  name = "ADA6"  direction = "in"  />
+        <pitem  name = "ADA5"  direction = "in"  />
+        <pitem  name = "ADA4"  direction = "in"  />
+        <pitem  name = "ADA3"  direction = "in"  />
+        <pitem  name = "DIA7"  direction = "in"  />
+        <pitem  name = "DIA6"  direction = "in"  />
+        <pitem  name = "DIA5"  direction = "in"  />
+        <pitem  name = "DIA4"  direction = "in"  />
+        <pitem  name = "DIA3"  direction = "in"  />
+        <pitem  name = "DIA2"  direction = "in"  />
+        <pitem  name = "DIA1"  direction = "in"  />
+        <pitem  name = "DIA0"  direction = "in"  />
+        <pitem  name = "DOA7"  direction = "out"  />
+        <pitem  name = "DOA6"  direction = "out"  />
+        <pitem  name = "DOA5"  direction = "out"  />
+        <pitem  name = "DOA4"  direction = "out"  />
+        <pitem  name = "DOA3"  direction = "out"  />
+        <pitem  name = "DOA2"  direction = "out"  />
+        <pitem  name = "DOA1"  direction = "out"  />
+        <pitem  name = "DOA0"  direction = "out"  />
+        <pitem  name = "ADA0"  direction = "in"  />
+        <pitem  name = "CEB"  direction = "in"  />
+        <pitem  name = "OCEB"  direction = "in"  />
+        <pitem  name = "DIA8"  direction = "in"  />
+        <pitem  name = "ADA12"  direction = "in"  />
+        <pitem  name = "ADA11"  direction = "in"  />
+        <pitem  name = "ADA2"  direction = "in"  />
+        <pitem  name = "ADA1"  direction = "in"  />
+        <pitem  name = "CSA2"  direction = "in"  />
+        <pitem  name = "CSA1"  direction = "in"  />
+        <pitem  name = "CSA0"  direction = "in"  />
+        <pitem  name = "DIB8"  direction = "in"  />
+        <pitem  name = "DIB7"  direction = "in"  />
+        <pitem  name = "DIB6"  direction = "in"  />
+        <pitem  name = "DIB5"  direction = "in"  />
+        <pitem  name = "DIB4"  direction = "in"  />
+        <pitem  name = "DIB3"  direction = "in"  />
+        <pitem  name = "DIB2"  direction = "in"  />
+        <pitem  name = "DIB1"  direction = "in"  />
+        <pitem  name = "DIB0"  direction = "in"  />
+        <pitem  name = "ADB12"  direction = "in"  />
+        <pitem  name = "ADB11"  direction = "in"  />
+        <pitem  name = "ADB10"  direction = "in"  />
+        <pitem  name = "ADB9"  direction = "in"  />
+        <pitem  name = "ADB8"  direction = "in"  />
+        <pitem  name = "ADB7"  direction = "in"  />
+        <pitem  name = "ADB6"  direction = "in"  />
+        <pitem  name = "ADB5"  direction = "in"  />
+        <pitem  name = "ADB4"  direction = "in"  />
+        <pitem  name = "ADB3"  direction = "in"  />
+        <pitem  name = "ADB2"  direction = "in"  />
+        <pitem  name = "ADB1"  direction = "in"  />
+        <pitem  name = "ADB0"  direction = "in"  />
+        <pitem  name = "CLKB"  direction = "in"  />
+        <pitem  name = "WEB"  direction = "in"  />
+        <pitem  name = "CSB2"  direction = "in"  />
+        <pitem  name = "CSB1"  direction = "in"  />
+        <pitem  name = "CSB0"  direction = "in"  />
+        <pitem  name = "RSTB"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "ram_clk[0]"  />
+        <nitem  name = "pwr"  />
+        <nitem  name = "rst_N_2"  />
+        <nitem  name = "rom_out[13]"  />
+        <nitem  name = "rom_out[7]"  />
+        <nitem  name = "rom_out[6]"  />
+        <nitem  name = "rom_out[5]"  />
+        <nitem  name = "rom_out[4]"  />
+        <nitem  name = "rom_out[3]"  />
+        <nitem  name = "rom_out[2]"  />
+        <nitem  name = "rom_out[1]"  />
+        <nitem  name = "rom_out[0]"  />
+        <nitem  name = "data_out[7]"  />
+        <nitem  name = "data_out[6]"  />
+        <nitem  name = "data_out[5]"  />
+        <nitem  name = "data_out[4]"  />
+        <nitem  name = "data_out[3]"  />
+        <nitem  name = "data_out[2]"  />
+        <nitem  name = "data_out[1]"  />
+        <nitem  name = "data_out[0]"  />
+        <nitem  name = "data_in[7]"  />
+        <nitem  name = "data_in[6]"  />
+        <nitem  name = "data_in[5]"  />
+        <nitem  name = "data_in[4]"  />
+        <nitem  name = "data_in[3]"  />
+        <nitem  name = "data_in[2]"  />
+        <nitem  name = "data_in[1]"  />
+        <nitem  name = "data_in[0]"  />
+        <nitem  name = "ram_s/scuba_vhi"  />
+        <nitem  name = "ram_s/scuba_vlo"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/rst_n_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rst_n[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/rst_n_0__N_15"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/statu_1__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/pwr"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[1]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu_1__N_28[1]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu_1__N_28[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/statu_1__I_0_44"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[1]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_13"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/statu_1__I_0_40"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/pwr"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[1]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/statu_1__I_0_39"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/pwr"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[1]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_11"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/statu_1__I_0_38"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/pwr"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[1]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_10"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step1_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "rom_clk[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_10"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_9"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step2_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "ram_clk[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_10"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step2_0__N_19"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step3_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_step3[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_10"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step3_0__N_23"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step4_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/pwr"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_10"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4_0__N_27"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step1_0__I_2"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_11"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_9"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step2_0__I_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_11"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step2_0__N_19"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step2_0__N_18"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step3_0__I_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/pwr"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_11"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step3_0__N_23"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step3_0__N_22"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step4_0__I_8"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_11"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4_0__N_27"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4_0__N_26"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step1_0__I_1"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_12"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_8"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_7"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step2_0__I_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/pwr"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_12"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step2_0__N_18"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step2_0__N_17"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step3_0__I_5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_12"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step3_0__N_22"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step3_0__N_21"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step4_0__I_7"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_12"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4_0__N_26"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4_0__N_25"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step1_0__I_0_37"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/pwr"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_13"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_7"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_6"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step2_0__I_0_41"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_13"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step2_0__N_17"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step2_0__N_16"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step3_0__I_0_42"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_13"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step3_0__N_21"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step3_0__N_20"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step4_0__I_0_43"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_13"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4_0__N_25"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4_0__N_24"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step1[0]_33"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "clk_in[0]"  />
+        <nitem  name = "rom_clk[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/rst_n_0__N_15"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step1_0__N_6"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step2[0]_34"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "clk_in[0]"  />
+        <nitem  name = "ram_clk[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/rst_n_0__N_15"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step2_0__N_16"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step3[0]_35"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "clk_in[0]"  />
+        <nitem  name = "uut_cpu/clk_step3[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/rst_n_0__N_15"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step3_0__N_20"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/clk_step4[0]_36"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "clk_in[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/rst_n_0__N_15"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/clk_step4_0__N_24"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/clk_gen_uut/statu"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/clk_gen_uut/gnd"  />
+        <nitem  name = "clk_in[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[1]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu[0]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/rst_n_0__N_15"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu_1__N_28[1]"  />
+        <nitem  name = "uut_cpu/clk_gen_uut/statu_1__N_28[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/A_7__I_0_87"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "data_out[7]"  />
+        <nitem  name = "data_out[6]"  />
+        <nitem  name = "data_out[5]"  />
+        <nitem  name = "data_out[4]"  />
+        <nitem  name = "data_out[3]"  />
+        <nitem  name = "data_out[2]"  />
+        <nitem  name = "data_out[1]"  />
+        <nitem  name = "data_out[0]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[7]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[6]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[5]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[4]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[3]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[2]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[1]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/add_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "data_out[7]"  />
+        <nitem  name = "data_out[6]"  />
+        <nitem  name = "data_out[5]"  />
+        <nitem  name = "data_out[4]"  />
+        <nitem  name = "data_out[3]"  />
+        <nitem  name = "data_out[2]"  />
+        <nitem  name = "data_out[1]"  />
+        <nitem  name = "data_out[0]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[7]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[6]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[5]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[4]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[3]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[2]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[1]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/C_7__I_9"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "uut_cpu/carry[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_74[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/or_6"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[7]"  />
+        <nitem  name = "data_out[6]"  />
+        <nitem  name = "data_out[5]"  />
+        <nitem  name = "data_out[4]"  />
+        <nitem  name = "data_out[3]"  />
+        <nitem  name = "data_out[2]"  />
+        <nitem  name = "data_out[1]"  />
+        <nitem  name = "data_out[0]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[7]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[6]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[5]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[4]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[3]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[2]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[1]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/C_7__I_10"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i[7]"  direction = "in"  />
+        <pitem  name = "i[6]"  direction = "in"  />
+        <pitem  name = "i[5]"  direction = "in"  />
+        <pitem  name = "i[4]"  direction = "in"  />
+        <pitem  name = "i[3]"  direction = "in"  />
+        <pitem  name = "i[2]"  direction = "in"  />
+        <pitem  name = "i[1]"  direction = "in"  />
+        <pitem  name = "i[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_83[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/A_7__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[7]"  />
+        <nitem  name = "data_out[6]"  />
+        <nitem  name = "data_out[5]"  />
+        <nitem  name = "data_out[4]"  />
+        <nitem  name = "data_out[3]"  />
+        <nitem  name = "data_out[2]"  />
+        <nitem  name = "data_out[1]"  />
+        <nitem  name = "data_out[0]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[7]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[6]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[5]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[4]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[3]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[2]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[1]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_91"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/C_7__I_11"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "uut_cpu/alu_uut/n75"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_91"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_77"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[7]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[7]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[7]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_30"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_85"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "uut_cpu/alu_uut/n75"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_70"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_78"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[6]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[6]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[6]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_35"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_79"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[5]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[5]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[5]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_40"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_80"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[4]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[4]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[4]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_45"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_81"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[3]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[3]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[3]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_50"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_82"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[2]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[2]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[2]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_55"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_83"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[1]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[1]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[1]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_60"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_84"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "data_out[0]"  />
+        <nitem  name = "uut_cpu/ALU_in_B[0]"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_34[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_32[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_31[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_65"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/carry_out_0__I_0"  library = "work"  arch = ""  type = "seq">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "r"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "gate"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "uut_cpu/carry_in[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/carry_out_0__N_71"  />
+        <nitem  name = "uut_cpu/alu_uut/carry_out_0__N_73"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0_86"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_33[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/n73"  />
+        <nitem  name = "uut_cpu/alu_uut/carry_out_0__N_71"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/C_7__I_0"  library = "work"  arch = ""  type = "seq">
+        <pins>
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "uut_cpu/ALU_out[7]"  />
+        <nitem  name = "uut_cpu/ALU_out[6]"  />
+        <nitem  name = "uut_cpu/ALU_out[5]"  />
+        <nitem  name = "uut_cpu/ALU_out[4]"  />
+        <nitem  name = "uut_cpu/ALU_out[3]"  />
+        <nitem  name = "uut_cpu/ALU_out[2]"  />
+        <nitem  name = "uut_cpu/ALU_out[1]"  />
+        <nitem  name = "uut_cpu/ALU_out[0]"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_30"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_70"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_35"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_40"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_45"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_50"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_55"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_60"  />
+        <nitem  name = "uut_cpu/alu_uut/C_7__N_65"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/alu_uut/S_2__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "data[6]"  direction = "in"  />
+        <pitem  name = "data[7]"  direction = "in"  />
+        <pitem  name = "data[5]"  direction = "in"  />
+        <pitem  name = "data[4]"  direction = "in"  />
+        <pitem  name = "data[3]"  direction = "in"  />
+        <pitem  name = "data[2]"  direction = "in"  />
+        <pitem  name = "data[0]"  direction = "in"  />
+        <pitem  name = "data[1]"  direction = "in"  />
+        <pitem  name = "sel[2]"  direction = "in"  />
+        <pitem  name = "sel[1]"  direction = "in"  />
+        <pitem  name = "sel[0]"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/alu_uut/n72"  />
+        <nitem  name = "uut_cpu/alu_uut/n75"  />
+        <nitem  name = "rom_out[10]"  />
+        <nitem  name = "rom_out[9]"  />
+        <nitem  name = "rom_out[8]"  />
+        <nitem  name = "uut_cpu/alu_uut/carry_out_0__N_73"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/X/rst_n_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rst_n[0]"  />
+        <nitem  name = "uut_cpu/X/rst_n_0__N_93"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/X/d_out"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/X/gnd"  />
+        <nitem  name = "uut_cpu/clk_X[0]"  />
+        <nitem  name = "uut_cpu/ALU_out[7]"  />
+        <nitem  name = "uut_cpu/ALU_out[6]"  />
+        <nitem  name = "uut_cpu/ALU_out[5]"  />
+        <nitem  name = "uut_cpu/ALU_out[4]"  />
+        <nitem  name = "uut_cpu/ALU_out[3]"  />
+        <nitem  name = "uut_cpu/ALU_out[2]"  />
+        <nitem  name = "uut_cpu/ALU_out[1]"  />
+        <nitem  name = "uut_cpu/ALU_out[0]"  />
+        <nitem  name = "data_out[7]"  />
+        <nitem  name = "data_out[6]"  />
+        <nitem  name = "data_out[5]"  />
+        <nitem  name = "data_out[4]"  />
+        <nitem  name = "data_out[3]"  />
+        <nitem  name = "data_out[2]"  />
+        <nitem  name = "data_out[1]"  />
+        <nitem  name = "data_out[0]"  />
+        <nitem  name = "uut_cpu/X/rst_n_0__N_93"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/carry_reg/rst_n_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rst_n[0]"  />
+        <nitem  name = "uut_cpu/carry_reg/rst_n_0__N_95"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/carry_reg/d_out[0]_7"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "s"  direction = "in"  />
+        <pitem  name = "clk"  direction = "in"  />
+        <pitem  name = "d"  direction = "in"  />
+        <pitem  name = "q"  direction = "out"  />
+        <pitem  name = "r"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/carry_reg/gnd"  />
+        <nitem  name = "uut_cpu/clk_carry[0]"  />
+        <nitem  name = "uut_cpu/carry_in[0]"  />
+        <nitem  name = "uut_cpu/carry[0]"  />
+        <nitem  name = "uut_cpu/carry_reg/rst_n_0__N_95"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/rst_n_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rst_n[0]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "cin"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "uut_cpu/PC/n44"  />
+        <nitem  name = "rom_address_out[7]"  />
+        <nitem  name = "rom_address_out[6]"  />
+        <nitem  name = "rom_address_out[5]"  />
+        <nitem  name = "rom_address_out[4]"  />
+        <nitem  name = "rom_address_out[3]"  />
+        <nitem  name = "rom_address_out[2]"  />
+        <nitem  name = "rom_address_out[1]"  />
+        <nitem  name = "rom_address_out[0]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[7]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[6]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[5]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[4]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[3]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[2]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[1]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[0]"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/load_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC_load[0]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_in_7__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "rom_out[7]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_108"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_in_6__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "rom_out[6]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_110"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_in_5__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "rom_out[5]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_112"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_in_4__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "rom_out[4]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_114"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_in_3__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "rom_out[3]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_116"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_in_2__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "rom_out[2]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_118"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_in_1__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "rom_out[1]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_120"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_in_0__I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/n43"  />
+        <nitem  name = "rom_out[0]"  />
+        <nitem  name = "uut_cpu/PC/rst_n_0__N_107"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_122"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__I_0_66"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_104"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_108"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_108_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "i"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_125"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_108"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_59"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_123"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_125"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_52"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_109"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_110"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_110_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "i"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_128"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_110"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_60"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_126"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_128"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_53"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_112"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_111"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_112_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_112"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_131"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_61"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_131"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_129"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_54"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_114"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_113"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_114_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_114"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_134"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_62"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_134"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_132"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_55"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_116"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_115"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_116_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_116"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_137"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_63"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_137"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_135"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_56"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_118"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_117"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_118_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_118"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_140"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_64"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_140"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_138"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_57"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_120"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_119"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_120_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_120"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_143"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_65"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_143"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_141"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0_58"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_122"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_121"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_122_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_122"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_146"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out_7__N_105_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "uut_cpu/PC/d_out_7__N_105"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_146"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_144"  />
+        </nets>
+    </instance>
+
+    <instance  name = "uut_cpu/PC/d_out"  library = "work"  arch = ""  type = "reg">
+        <pins>
+        <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[7]"  direction = "out"  />
+        <pitem  name = "q[6]"  direction = "out"  />
+        <pitem  name = "q[5]"  direction = "out"  />
+        <pitem  name = "q[4]"  direction = "out"  />
+        <pitem  name = "q[3]"  direction = "out"  />
+        <pitem  name = "q[2]"  direction = "out"  />
+        <pitem  name = "q[1]"  direction = "out"  />
+        <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[7]"  direction = "in"  />
+        <pitem  name = "d[6]"  direction = "in"  />
+        <pitem  name = "d[5]"  direction = "in"  />
+        <pitem  name = "d[4]"  direction = "in"  />
+        <pitem  name = "d[3]"  direction = "in"  />
+        <pitem  name = "d[2]"  direction = "in"  />
+        <pitem  name = "d[1]"  direction = "in"  />
+        <pitem  name = "d[0]"  direction = "in"  />
+        <pitem  name = "reset[6]"  direction = "in"  />
+        <pitem  name = "set[6]"  direction = "in"  />
+        <pitem  name = "reset[7]"  direction = "in"  />
+        <pitem  name = "set[7]"  direction = "in"  />
+        <pitem  name = "set[5]"  direction = "in"  />
+        <pitem  name = "reset[5]"  direction = "in"  />
+        <pitem  name = "set[4]"  direction = "in"  />
+        <pitem  name = "reset[4]"  direction = "in"  />
+        <pitem  name = "set[3]"  direction = "in"  />
+        <pitem  name = "reset[3]"  direction = "in"  />
+        <pitem  name = "set[2]"  direction = "in"  />
+        <pitem  name = "reset[2]"  direction = "in"  />
+        <pitem  name = "set[1]"  direction = "in"  />
+        <pitem  name = "reset[1]"  direction = "in"  />
+        <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[0]"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "rom_clk[0]"  />
+        <nitem  name = "rom_address_out[7]"  />
+        <nitem  name = "rom_address_out[6]"  />
+        <nitem  name = "rom_address_out[5]"  />
+        <nitem  name = "rom_address_out[4]"  />
+        <nitem  name = "rom_address_out[3]"  />
+        <nitem  name = "rom_address_out[2]"  />
+        <nitem  name = "rom_address_out[1]"  />
+        <nitem  name = "rom_address_out[0]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[7]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[6]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[5]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[4]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[3]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[2]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[1]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_96[0]"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_126"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_109"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_123"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_104"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_111"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_129"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_113"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_132"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_115"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_135"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_117"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_138"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_119"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_141"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_121"  />
+        <nitem  name = "uut_cpu/PC/d_out_7__N_144"  />
+        </nets>
+    </instance>
+
+    <instance  name = "PC"  />
+    <instance  name = "X"  />
+    <instance  name = "alu_uut"  />
+    <instance  name = "carry_reg"  />
+    <instance  name = "clk_gen_uut"  />
+    <instance  name = "ram_s"  />
+    <instance  name = "rom_s"  />
+    <instance  name = "uut_cpu"  />
+    <!--
+        REG instances in netlist: 8
+    -->
+
+    <regs>
+        <reg  name = "uut_cpu/clk_gen_uut/clk_step1[0]_33"  />
+        <reg  name = "uut_cpu/clk_gen_uut/clk_step2[0]_34"  />
+        <reg  name = "uut_cpu/clk_gen_uut/clk_step3[0]_35"  />
+        <reg  name = "uut_cpu/clk_gen_uut/clk_step4[0]_36"  />
+        <reg  name = "uut_cpu/clk_gen_uut/statu"  />
+        <reg  name = "uut_cpu/X/d_out"  />
+        <reg  name = "uut_cpu/carry_reg/d_out[0]_7"  />
+        <reg  name = "uut_cpu/PC/d_out"  />
+    </regs>
+
+    <!--
+        Views in design "computer": 8
+    -->
+
+    <views>
+        <view  name = "RAM"  />
+        <view  name = "alu"  />
+        <view  name = "clk_gen"  />
+        <view  name = "counter"  />
+        <view  name = "cpu"  />
+        <view  name = "reg_1b"  />
+        <view  name = "reg_8b"  />
+        <view  name = "rom"  />
+    </views>
+
+</unit>
+
+</library>
+
+</top>

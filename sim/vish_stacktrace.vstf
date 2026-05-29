@@ -1,0 +1,23 @@
+# Current time Thu Apr 30 11:20:24 2026
+# ModelSim - Lattice FPGA Edition Stack Trace
+# Program = vish
+# Id = "2023.3"
+# Version = "2023.07"
+# Date = "Jul 18 2023"
+# Platform = win32loem
+
+Exception c0000005 has occurred at address 00626dba. Traceback:
+# 0    0x00626dba: 'Mtirpc_Init + 0xdfafa'
+# 1    0x00620810: 'Mtirpc_Init + 0xd9550'
+# 2    0x0060de4a: 'Mtirpc_Init + 0xc6b8a'
+# 3    0x0060ad53: 'Mtirpc_Init + 0xc3a93'
+# 4    0x0060a9b3: 'Mtirpc_Init + 0xc36f3'
+# 5    0x0060a8b6: 'Mtirpc_Init + 0xc35f6'
+# 6    0x00669a0f: 'Mtirpc_Init + 0x12274f'
+# 7    0x005a5acc: 'Mtirpc_Init + 0x5e80c'
+# 8    0x005a5c8b: 'Mtirpc_Init + 0x5e9cb'
+# 9    0x7ab5ef58: 'TclCallVarTraces + 0x2e8'
+# 10   0x7ab69e9f: 'Tcl_FindNamespaceVar + 0x18f'
+StackWalk failed 299
+# End of Stack Trace
+

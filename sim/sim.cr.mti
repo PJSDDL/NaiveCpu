@@ -1,0 +1,54 @@
+E:/CPUv1/cpu.v {1 {vlog -work work -stats=none E:/CPUv1/cpu.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module cpu
+
+Top level modules:
+	cpu
+
+} {} {}} E:/CPUv1/RAM.v {1 {vlog -work work -stats=none E:/CPUv1/RAM.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module RAM
+
+Top level modules:
+	RAM
+
+} {} {}} E:/CPUv1/sim.v {1 {vlog -work work -stats=none E:/CPUv1/sim.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module divider_tb
+
+Top level modules:
+	divider_tb
+
+} {} {}} E:/CPUv1/ALU.v {1 {vlog -work work -stats=none E:/CPUv1/ALU.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} E:/CPUv1/reg.v {1 {vlog -work work -stats=none E:/CPUv1/reg.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module reg_8b
+-- Compiling module reg_1b
+-- Compiling module counter
+
+Top level modules:
+	reg_8b
+	reg_1b
+	counter
+
+} {} {}} E:/CPUv1/computer.v {1 {vlog -work work -stats=none E:/CPUv1/computer.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module computer
+
+Top level modules:
+	computer
+
+} {} {}} E:/CPUv1/clk_gen.v {1 {vlog -work work -stats=none E:/CPUv1/clk_gen.v
+Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+-- Compiling module clk_gen
+
+Top level modules:
+	clk_gen
+
+} {} {}}

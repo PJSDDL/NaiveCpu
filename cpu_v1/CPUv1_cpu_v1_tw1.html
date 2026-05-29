@@ -1,0 +1,1055 @@
+<HTML>
+<HEAD><TITLE>Lattice Map TRACE Report</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Map_Twr"></A><B><U><big>Map TRACE Report</big></U></B>
+
+Loading design for application trce from file cpuv1_cpu_v1_map.ncd.
+Design name: computer
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     FPBGA484
+Performance: 5
+Loading device for application trce from file 'xo2c4000.nph' in environment: E:/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_setup"></A><B><U><big>Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Thu May 28 16:36:31 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_set_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CPUv1_cpu_v1.tw1 -gui -msgset E:/CPUv1/promote.xml CPUv1_cpu_v1_map.ncd CPUv1_cpu_v1.prf 
+Design file:     cpuv1_cpu_v1_map.ncd
+Preference file: cpuv1_cpu_v1.prf
+Device,speed:    LCMXO2-4000HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_set_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_0' Target='right'><FONT COLOR=red>FREQUENCY NET "ram_clk_0" 122.384000 MHz (17 errors)</FONT></A></LI>
+</FONT>            17 items scored, 17 timing errors detected.
+Warning:   7.814MHz is the maximum frequency for this preference.
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_1' Target='right'><FONT COLOR=red>FREQUENCY NET "clk_in_c_0" 444.247000 MHz (10 errors)</FONT></A></LI>
+</FONT>            22 items scored, 10 timing errors detected.
+Warning: 315.457MHz is the maximum frequency for this preference.
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_2' Target='right'><FONT COLOR=red>FREQUENCY NET "rom_clk[0]" 95.157000 MHz (159 errors)</FONT></A></LI>
+</FONT>            440 items scored, 159 timing errors detected.
+Warning:   0.189MHz is the maximum frequency for this preference.
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_3' Target='right'><FONT COLOR=red>FREQUENCY NET "uut_cpu/clk_X[0]" 444.247000 MHz (8 errors)</FONT></A></LI>
+</FONT>            8 items scored, 8 timing errors detected.
+Warning: 104.308MHz is the maximum frequency for this preference.
+
+<LI><A href='#map_twr_pref_0_4' Target='right'>FREQUENCY NET "uut_cpu/clk_carry[0]" 444.247000 MHz (0 errors)</A></LI>            1 item scored, 0 timing errors detected.
+Report:  444.444MHz is the maximum frequency for this preference.
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_5' Target='right'><FONT COLOR=red>FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz (640 errors)</FONT></A></LI>
+</FONT>            640 items scored, 640 timing errors detected.
+Warning:   0.767MHz is the maximum frequency for this preference.
+
+<FONT COLOR=red><LI><A href='#map_twr_pref_0_6' Target='right'><FONT COLOR=red>FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz (36 errors)</FONT></A></LI>
+</FONT>            36 items scored, 36 timing errors detected.
+Warning:   2.547MHz is the maximum frequency for this preference.
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_0_0"></A>Preference: FREQUENCY NET "ram_clk_0" 122.384000 MHz ;
+            17 items scored, 17 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 1.305ns (weighted slack = -119.811ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/X/d_out_i5  (from uut_cpu/clk_X[0] +)
+   Destination:    DP8KC      Port           ram_s/RAM_0_0_0(ASIC)  (to ram_clk_0 +)
+
+   Delay:               1.439ns  (28.4% logic, 71.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.439ns physical path delay uut_cpu/SLICE_1 to ram_s/RAM_0_0_0 exceeds
+      (delay constraint based on source clock period of 2.251ns and destination clock period of 8.171ns)
+      0.089ns delay constraint less
+     -0.045ns DATA_SET requirement (totaling 0.134ns) by 1.305ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/SLICE_1 to ram_s/RAM_0_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 *u/SLICE_1.CLK to *pu/SLICE_1.Q0 uut_cpu/SLICE_1 (from uut_cpu/clk_X[0])
+ROUTE         8   e 1.030 *pu/SLICE_1.Q0 to *AM_0_0_0.DIA4 data_out_c_4 (to ram_clk_0)
+                  --------
+                    1.439   (28.4% logic, 71.6% route), 1 logic levels.
+
+Warning:   7.814MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_1"></A>Preference: FREQUENCY NET "clk_in_c_0" 444.247000 MHz ;
+            22 items scored, 10 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 0.919ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/clk_gen_uut/statu_FSM_i3  (from clk_in_c_0 +)
+   Destination:    FF         Data in        uut_cpu/clk_gen_uut/clk_step2_0__34  (to clk_in_c_0 +)
+
+   Delay:               2.921ns  (29.5% logic, 70.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.921ns physical path delay uut_cpu/SLICE_50 to uut_cpu/SLICE_74 exceeds
+      2.251ns delay constraint less
+      0.249ns CE_SET requirement (totaling 2.002ns) by 0.919ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/SLICE_50 to uut_cpu/SLICE_74:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 */SLICE_50.CLK to *u/SLICE_50.Q0 uut_cpu/SLICE_50 (from clk_in_c_0)
+ROUTE         4   e 1.030 *u/SLICE_50.Q0 to *t/SLICE_51.D1 uut_cpu/clk_gen_uut/clk_step3_0__N_22
+CTOF_DEL    ---     0.452 *t/SLICE_51.D1 to *t/SLICE_51.F1 uut_cpu/clk_gen_uut/SLICE_51
+ROUTE         2   e 1.030 *t/SLICE_51.F1 to *u/SLICE_74.CE uut_cpu/clk_gen_uut/clk_in_c_0_enable_2 (to clk_in_c_0)
+                  --------
+                    2.921   (29.5% logic, 70.5% route), 2 logic levels.
+
+Warning: 315.457MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_2"></A>Preference: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;
+            440 items scored, 159 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 6.520ns (weighted slack = -5270.668ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/X/d_out_i1  (from uut_cpu/clk_X[0] +)
+   Destination:    FF         Data in        uut_cpu/PC/d_out_i0_70_71_set  (to rom_clk[0] +)
+
+   Delay:               5.885ns  (30.0% logic, 70.0% route), 4 logic levels.
+
+ Constraint Details:
+
+      5.885ns physical path delay uut_cpu/SLICE_4 to uut_cpu/SLICE_12 exceeds
+      (delay constraint based on source clock period of 2.251ns and destination clock period of 10.509ns)
+      0.013ns delay constraint less
+      0.648ns LSRREC_SET requirement (totaling -0.635ns) by 6.520ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/SLICE_4 to uut_cpu/SLICE_12:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 *u/SLICE_4.CLK to *pu/SLICE_4.Q0 uut_cpu/SLICE_4 (from uut_cpu/clk_X[0])
+ROUTE         8   e 1.030 *pu/SLICE_4.Q0 to *u/SLICE_78.A0 data_out_c_0
+CTOF_DEL    ---     0.452 *u/SLICE_78.A0 to *u/SLICE_78.F0 uut_cpu/SLICE_78
+ROUTE         1   e 1.030 *u/SLICE_78.F0 to *C/SLICE_60.C1 uut_cpu/n15
+CTOF_DEL    ---     0.452 *C/SLICE_60.C1 to *C/SLICE_60.F1 uut_cpu/PC/SLICE_60
+ROUTE        16   e 1.030 *C/SLICE_60.F1 to *u/SLICE_78.C1 uut_cpu/PC/d_out_7__N_105
+CTOF_DEL    ---     0.452 *u/SLICE_78.C1 to *u/SLICE_78.F1 uut_cpu/SLICE_78
+ROUTE         2   e 1.030 *u/SLICE_78.F1 to */SLICE_12.LSR uut_cpu/PC/d_out_7__N_121 (to rom_clk[0])
+                  --------
+                    5.885   (30.0% logic, 70.0% route), 4 logic levels.
+
+Warning:   0.189MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_3"></A>Preference: FREQUENCY NET "uut_cpu/clk_X[0]" 444.247000 MHz ;
+            8 items scored, 8 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 1.333ns (weighted slack = -7.336ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/alu_uut/C_7__I_0_i5  (from uut_cpu/alu_uut/C_7__N_70 +)
+   Destination:    FF         Data in        uut_cpu/X/d_out_i5  (to uut_cpu/clk_X[0] +)
+
+   Delay:               1.439ns  (28.4% logic, 71.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.439ns physical path delay uut_cpu/alu_uut/SLICE_26 to uut_cpu/SLICE_1 exceeds
+      (delay constraint based on source clock period of 13.097ns and destination clock period of 2.251ns)
+      0.409ns delay constraint less
+      0.303ns M_SET requirement (totaling 0.106ns) by 1.333ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/alu_uut/SLICE_26 to uut_cpu/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 */SLICE_26.CLK to *t/SLICE_26.Q0 uut_cpu/alu_uut/SLICE_26 (from uut_cpu/alu_uut/C_7__N_70)
+ROUTE         1   e 1.030 *t/SLICE_26.Q0 to *pu/SLICE_1.M0 uut_cpu/ALU_out_4 (to uut_cpu/clk_X[0])
+                  --------
+                    1.439   (28.4% logic, 71.6% route), 1 logic levels.
+
+Warning: 104.308MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_4"></A>Preference: FREQUENCY NET "uut_cpu/clk_carry[0]" 444.247000 MHz ;
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 0.001ns
+         The internal maximum frequency of the following component is 444.444 MHz
+
+ Logical Details:  Cell type  Pin name       Component name
+
+   Destination:    SLICE      CLK            uut_cpu/SLICE_47
+
+   Delay:               2.250ns -- based on Minimum Pulse Width
+
+
+Passed: The following path meets requirements by 0.509ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/alu_uut/carry_out_0__I_0  (from uut_cpu/alu_uut/carry_out_0__N_73 +)
+   Destination:    FF         Data in        uut_cpu/carry_reg/d_out_0__7  (to uut_cpu/clk_carry[0] +)
+
+   Delay:               1.439ns  (28.4% logic, 71.6% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.439ns physical path delay uut_cpu/alu_uut/SLICE_0 to uut_cpu/SLICE_47 meets
+      2.251ns delay constraint less
+      0.303ns M_SET requirement (totaling 1.948ns) by 0.509ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/alu_uut/SLICE_0 to uut_cpu/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.409 *t/SLICE_0.CLK to *ut/SLICE_0.Q1 uut_cpu/alu_uut/SLICE_0 (from uut_cpu/alu_uut/carry_out_0__N_73)
+ROUTE         1   e 1.030 *ut/SLICE_0.Q1 to *u/SLICE_47.M0 uut_cpu/carry_in_0 (to uut_cpu/clk_carry[0])
+                  --------
+                    1.439   (28.4% logic, 71.6% route), 1 logic levels.
+
+Report:  444.444MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_5"></A>Preference: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;
+            640 items scored, 640 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 11.531ns (weighted slack = -1290.782ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           ram_s/RAM_0_0_0(ASIC)  (from ram_clk_0 +)
+   Destination:    FF         Data in        uut_cpu/alu_uut/C_7__I_0_i5  (to uut_cpu/alu_uut/C_7__N_70 +)
+
+   Delay:              11.498ns  (64.1% logic, 35.9% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.498ns physical path delay ram_s/RAM_0_0_0 to uut_cpu/alu_uut/SLICE_26 exceeds
+      (delay constraint based on source clock period of 8.171ns and destination clock period of 13.097ns)
+      0.117ns delay constraint less
+      0.150ns DIN_SET requirement (totaling -0.033ns) by 11.531ns
+
+ Physical Path Details:
+
+      Data path ram_s/RAM_0_0_0 to uut_cpu/alu_uut/SLICE_26:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.518 *AM_0_0_0.CLKA to *AM_0_0_0.DOA7 ram_s/RAM_0_0_0 (from ram_clk_0)
+ROUTE         3   e 1.030 *AM_0_0_0.DOA7 to *u/SLICE_76.A0 data_in_7
+CTOF_DEL    ---     0.452 *u/SLICE_76.A0 to *u/SLICE_76.F0 uut_cpu/SLICE_76
+ROUTE         2   e 1.030 *u/SLICE_76.F0 to *u/SLICE_12.A1 uut_cpu/ALU_in_B_7
+C1TOFCO_DE  ---     0.786 *u/SLICE_12.A1 to */SLICE_12.FCO uut_cpu/SLICE_12
+ROUTE         1   e 0.001 */SLICE_12.FCO to */SLICE_11.FCI uut_cpu/alu_uut/n238
+FCITOFCO_D  ---     0.146 */SLICE_11.FCI to */SLICE_11.FCO uut_cpu/SLICE_11
+ROUTE         1   e 0.001 */SLICE_11.FCO to */SLICE_10.FCI uut_cpu/alu_uut/n239
+FCITOF1_DE  ---     0.569 */SLICE_10.FCI to *u/SLICE_10.F1 uut_cpu/SLICE_10
+ROUTE         8   e 1.030 *u/SLICE_10.F1 to *t/SLICE_73.A1 uut_cpu/alu_uut/C_7_N_31_7
+CTOF_DEL    ---     0.452 *t/SLICE_73.A1 to *t/SLICE_73.F1 uut_cpu/alu_uut/SLICE_73
+ROUTE         1   e 1.030 *t/SLICE_73.F1 to *t/SLICE_26.B0 uut_cpu/alu_uut/n4_adj_150
+CTOF_DEL    ---     0.452 *t/SLICE_26.B0 to *t/SLICE_26.F0 uut_cpu/alu_uut/SLICE_26
+ROUTE         1   e 0.001 *t/SLICE_26.F0 to */SLICE_26.DI0 uut_cpu/alu_uut/C_7__N_45 (to uut_cpu/alu_uut/C_7__N_70)
+                  --------
+                   11.498   (64.1% logic, 35.9% route), 7 logic levels.
+
+Warning:   0.767MHz is the maximum frequency for this preference.
+
+
+================================================================================
+<A name="map_twr_pref_0_6"></A>Preference: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;
+            36 items scored, 36 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 7.281ns (weighted slack = -381.389ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         DP8KC      Port           ram_s/RAM_0_0_0(ASIC)  (from ram_clk_0 +)
+   Destination:    FF         Data in        uut_cpu/alu_uut/carry_out_0__I_0  (to uut_cpu/alu_uut/carry_out_0__N_73 +)
+
+   Delay:               7.346ns  (85.9% logic, 14.1% route), 6 logic levels.
+
+ Constraint Details:
+
+      7.346ns physical path delay ram_s/RAM_0_0_0 to uut_cpu/alu_uut/SLICE_0 exceeds
+      (delay constraint based on source clock period of 8.171ns and destination clock period of 11.262ns)
+      0.215ns delay constraint less
+      0.150ns DIN_SET requirement (totaling 0.065ns) by 7.281ns
+
+ Physical Path Details:
+
+      Data path ram_s/RAM_0_0_0 to uut_cpu/alu_uut/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+C2Q_DEL     ---     4.518 *AM_0_0_0.CLKA to *AM_0_0_0.DOA0 ram_s/RAM_0_0_0 (from ram_clk_0)
+ROUTE         3   e 1.030 *AM_0_0_0.DOA0 to *pu/SLICE_5.D1 data_in_0
+C1TOFCO_DE  ---     0.786 *pu/SLICE_5.D1 to *u/SLICE_5.FCO uut_cpu/SLICE_5
+ROUTE         1   e 0.001 *u/SLICE_5.FCO to *u/SLICE_4.FCI uut_cpu/alu_uut/n244
+FCITOFCO_D  ---     0.146 *u/SLICE_4.FCI to *u/SLICE_4.FCO uut_cpu/SLICE_4
+ROUTE         1   e 0.001 *u/SLICE_4.FCO to *u/SLICE_2.FCI uut_cpu/alu_uut/n245
+FCITOFCO_D  ---     0.146 *u/SLICE_2.FCI to *u/SLICE_2.FCO uut_cpu/SLICE_2
+ROUTE         1   e 0.001 *u/SLICE_2.FCO to *u/SLICE_1.FCI uut_cpu/alu_uut/n246
+FCITOFCO_D  ---     0.146 *u/SLICE_1.FCI to *u/SLICE_1.FCO uut_cpu/SLICE_1
+ROUTE         1   e 0.001 *u/SLICE_1.FCO to *t/SLICE_0.FCI uut_cpu/alu_uut/n247
+FCITOF1_DE  ---     0.569 *t/SLICE_0.FCI to *ut/SLICE_0.F1 uut_cpu/alu_uut/SLICE_0
+ROUTE         1   e 0.001 *ut/SLICE_0.F1 to *t/SLICE_0.DI1 uut_cpu/alu_uut/C_7_N_33_8 (to uut_cpu/alu_uut/carry_out_0__N_73)
+                  --------
+                    7.346   (85.9% logic, 14.1% route), 6 logic levels.
+
+Warning:   2.547MHz is the maximum frequency for this preference.
+
+<A name="mtw1_set_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "ram_clk_0" 122.384000    |             |             |
+MHz ;                                   |  122.384 MHz|    7.814 MHz|   1 *
+                                        |             |             |
+FREQUENCY NET "clk_in_c_0" 444.247000   |             |             |
+MHz ;                                   |  444.247 MHz|  315.457 MHz|   2 *
+                                        |             |             |
+FREQUENCY NET "rom_clk[0]" 95.157000    |             |             |
+MHz ;                                   |   95.157 MHz|    0.189 MHz|   4 *
+                                        |             |             |
+FREQUENCY NET "uut_cpu/clk_X[0]"        |             |             |
+444.247000 MHz ;                        |  444.247 MHz|  104.308 MHz|   1 *
+                                        |             |             |
+FREQUENCY NET "uut_cpu/clk_carry[0]"    |             |             |
+444.247000 MHz ;                        |  444.247 MHz|  444.444 MHz|   0  
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"uut_cpu/alu_uut/C_7__N_70" 76.353000   |             |             |
+MHz ;                                   |   76.353 MHz|    0.767 MHz|   7 *
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"uut_cpu/alu_uut/carry_out_0__N_73"     |             |             |
+88.794000 MHz ;                         |   88.794 MHz|    2.547 MHz|   6 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+6 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+uut_cpu/alu_uut/C_7_N_31_7              |       8|     256|     29.43%
+                                        |        |        |
+uut_cpu/alu_uut/n239                    |       1|     192|     22.07%
+                                        |        |        |
+uut_cpu/PC/d_out_7__N_105               |      16|     159|     18.28%
+                                        |        |        |
+rom_out_11                              |      24|     152|     17.47%
+                                        |        |        |
+uut_cpu/alu_uut/C_7__N_30               |       1|     108|     12.41%
+                                        |        |        |
+uut_cpu/alu_uut/C_7__N_35               |       1|     100|     11.49%
+                                        |        |        |
+uut_cpu/alu_uut/C_7__N_40               |       1|      92|     10.57%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+<A name="mtw1_set_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 15 clocks:
+
+Clock Domain: uut_cpu/clk_carry[0]   Source: uut_cpu/SLICE_68.F1   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/alu_uut/carry_out_0__N_73   Source: uut_cpu/SLICE_69.F1
+      Covered under: FREQUENCY NET "uut_cpu/clk_carry[0]" 444.247000 MHz ;   Transfers: 1
+
+Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0   Loads: 4
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/alu_uut/C_7__N_70   Source: uut_cpu/SLICE_69.F0
+      Covered under: FREQUENCY NET "uut_cpu/clk_X[0]" 444.247000 MHz ;   Transfers: 8
+
+Clock Domain: uut_cpu/alu_uut/carry_out_0__N_73   Source: uut_cpu/SLICE_69.F1   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/clk_carry[0]   Source: uut_cpu/SLICE_68.F1
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;   Transfers: 8
+
+   Clock Domain: rom_clk[0]   Source: uut_cpu/clk_gen_uut/SLICE_23.Q0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;   Transfers: 12
+
+   Clock Domain: ram_clk_0   Source: uut_cpu/SLICE_74.Q0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;   Transfers: 8
+
+Clock Domain: uut_cpu/alu_uut/C_7__N_70   Source: uut_cpu/SLICE_69.F0   Loads: 4
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/clk_carry[0]   Source: uut_cpu/SLICE_68.F1
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;   Transfers: 8
+
+   Clock Domain: rom_clk[0]   Source: uut_cpu/clk_gen_uut/SLICE_23.Q0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;   Transfers: 12
+
+   Clock Domain: ram_clk_0   Source: uut_cpu/SLICE_74.Q0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;   Transfers: 8
+
+Clock Domain: uut_cpu/PC/d_out_7__N_121   Source: uut_cpu/SLICE_78.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_119   Source: uut_cpu/PC/SLICE_64.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_117   Source: uut_cpu/PC/SLICE_61.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_115   Source: uut_cpu/PC/SLICE_62.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_113   Source: uut_cpu/PC/SLICE_67.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_111   Source: uut_cpu/PC/SLICE_63.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_109   Source: uut_cpu/PC/SLICE_66.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_104   Source: uut_cpu/PC/SLICE_65.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: rom_clk[0]   Source: uut_cpu/clk_gen_uut/SLICE_23.Q0   Loads: 19
+   Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;
+
+   Data transfers from:
+   Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 8
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_121   Source: uut_cpu/SLICE_78.F1
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_119   Source: uut_cpu/PC/SLICE_64.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_117   Source: uut_cpu/PC/SLICE_61.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_115   Source: uut_cpu/PC/SLICE_62.F1
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_113   Source: uut_cpu/PC/SLICE_67.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_111   Source: uut_cpu/PC/SLICE_63.F1
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_109   Source: uut_cpu/PC/SLICE_66.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_104   Source: uut_cpu/PC/SLICE_65.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: clk_in_c_0   Source: clk_in[0].PAD
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+Clock Domain: ram_clk_0   Source: uut_cpu/SLICE_74.Q0   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0
+      Covered under: FREQUENCY NET "ram_clk_0" 122.384000 MHz ;   Transfers: 8
+
+   Clock Domain: rom_clk[0]   Source: uut_cpu/clk_gen_uut/SLICE_23.Q0
+      Covered under: FREQUENCY NET "ram_clk_0" 122.384000 MHz ;   Transfers: 9
+
+Clock Domain: clk_in_c_0   Source: clk_in[0].PAD   Loads: 5
+   Covered under: FREQUENCY NET "clk_in_c_0" 444.247000 MHz ;
+
+
+<A name="mtw1_set_ts"></A><B><U><big>Timing summary (Setup):</big></U></B>
+---------------
+
+Timing errors: 870  Score: 1000578230
+Cumulative negative slack: 1000578230
+
+Constraints cover 2132 paths, 8 nets, and 476 connections (92.97% coverage)
+
+--------------------------------------------------------------------------------
+<A name="Map_Twr_hold"></A><B><U><big>Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2</big></U></B>
+Thu May 28 16:36:31 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+<A name="mtw1_hold_ri"></A><B><U><big>Report Information</big></U></B>
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o CPUv1_cpu_v1.tw1 -gui -msgset E:/CPUv1/promote.xml CPUv1_cpu_v1_map.ncd CPUv1_cpu_v1.prf 
+Design file:     cpuv1_cpu_v1_map.ncd
+Preference file: cpuv1_cpu_v1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+<A name="mtw1_hold_ps"></A><B><U><big>Preference Summary</big></U></B>
+
+<LI><A href='#map_twr_pref_1_0' Target='right'>FREQUENCY NET "ram_clk_0" 122.384000 MHz (0 errors)</A></LI>            17 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_1' Target='right'>FREQUENCY NET "clk_in_c_0" 444.247000 MHz (0 errors)</A></LI>            22 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_2' Target='right'>FREQUENCY NET "rom_clk[0]" 95.157000 MHz (0 errors)</A></LI>            440 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_3' Target='right'>FREQUENCY NET "uut_cpu/clk_X[0]" 444.247000 MHz (0 errors)</A></LI>            8 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_4' Target='right'>FREQUENCY NET "uut_cpu/clk_carry[0]" 444.247000 MHz (0 errors)</A></LI>            1 item scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_5' Target='right'>FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz (0 errors)</A></LI>            640 items scored, 0 timing errors detected.
+
+<LI><A href='#map_twr_pref_1_6' Target='right'>FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz (0 errors)</A></LI>            36 items scored, 0 timing errors detected.
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+<A name="map_twr_pref_1_0"></A>Preference: FREQUENCY NET "ram_clk_0" 122.384000 MHz ;
+            17 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.597ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/X/d_out_i5  (from uut_cpu/clk_X[0] +)
+   Destination:    DP8KC      Port           ram_s/RAM_0_0_0(ASIC)  (to ram_clk_0 +)
+
+   Delay:               0.648ns  (20.5% logic, 79.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.648ns physical path delay uut_cpu/SLICE_1 to ram_s/RAM_0_0_0 meets
+      (delay constraint based on source clock period of 2.251ns and destination clock period of 8.171ns)
+      0.051ns DATA_HLD and
+      0.000ns delay constraint requirement (totaling 0.051ns) by 0.597ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/SLICE_1 to ram_s/RAM_0_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *u/SLICE_1.CLK to *pu/SLICE_1.Q0 uut_cpu/SLICE_1 (from uut_cpu/clk_X[0])
+ROUTE         8   e 0.515 *pu/SLICE_1.Q0 to *AM_0_0_0.DIA4 data_out_c_4 (to ram_clk_0)
+                  --------
+                    0.648   (20.5% logic, 79.5% route), 1 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_1"></A>Preference: FREQUENCY NET "clk_in_c_0" 444.247000 MHz ;
+            22 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/clk_gen_uut/statu_FSM_i4  (from clk_in_c_0 +)
+   Destination:    FF         Data in        uut_cpu/clk_gen_uut/statu_FSM_i1  (to clk_in_c_0 +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay uut_cpu/SLICE_48 to uut_cpu/SLICE_48 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/SLICE_48 to uut_cpu/SLICE_48:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_48.CLK to *u/SLICE_48.Q1 uut_cpu/SLICE_48 (from clk_in_c_0)
+ROUTE         3   e 0.199 *u/SLICE_48.Q1 to *u/SLICE_48.M0 uut_cpu/clk_gen_uut/clk_step1_0__N_10 (to clk_in_c_0)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_2"></A>Preference: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;
+            440 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 1.192ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/PC/i69  (from uut_cpu/PC/d_out_7__N_121 +)
+   Destination:    DP8KC      Port           rom_s/rom_0_0_0(ASIC)  (to rom_clk[0] +)
+
+   Delay:               1.264ns  (18.5% logic, 81.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      1.264ns physical path delay SLICE_28 to rom_s/rom_0_0_0 meets
+      0.072ns ADDR_HLD and
+      0.000ns delay constraint requirement (totaling 0.072ns) by 1.192ns
+
+ Physical Path Details:
+
+      Data path SLICE_28 to rom_s/rom_0_0_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133   SLICE_28.CLK to    SLICE_28.Q0 SLICE_28 (from uut_cpu/PC/d_out_7__N_121)
+ROUTE         1   e 0.515    SLICE_28.Q0 to *u/SLICE_48.C0 uut_cpu/PC/n143
+CTOF_DEL    ---     0.101 *u/SLICE_48.C0 to *u/SLICE_48.F0 uut_cpu/SLICE_48
+ROUTE         3   e 0.515 *u/SLICE_48.F0 to *om_0_0_0.ADB3 rom_address_out_0 (to rom_clk[0])
+                  --------
+                    1.264   (18.5% logic, 81.5% route), 2 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_3"></A>Preference: FREQUENCY NET "uut_cpu/clk_X[0]" 444.247000 MHz ;
+            8 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.667ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/alu_uut/C_7__I_0_i5  (from uut_cpu/alu_uut/C_7__N_70 +)
+   Destination:    FF         Data in        uut_cpu/X/d_out_i5  (to uut_cpu/clk_X[0] +)
+
+   Delay:               0.648ns  (20.5% logic, 79.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.648ns physical path delay uut_cpu/alu_uut/SLICE_26 to uut_cpu/SLICE_1 meets
+      (delay constraint based on source clock period of 13.097ns and destination clock period of 2.251ns)
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.667ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/alu_uut/SLICE_26 to uut_cpu/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 */SLICE_26.CLK to *t/SLICE_26.Q0 uut_cpu/alu_uut/SLICE_26 (from uut_cpu/alu_uut/C_7__N_70)
+ROUTE         1   e 0.515 *t/SLICE_26.Q0 to *pu/SLICE_1.M0 uut_cpu/ALU_out_4 (to uut_cpu/clk_X[0])
+                  --------
+                    0.648   (20.5% logic, 79.5% route), 1 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_4"></A>Preference: FREQUENCY NET "uut_cpu/clk_carry[0]" 444.247000 MHz ;
+            1 item scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.667ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/alu_uut/carry_out_0__I_0  (from uut_cpu/alu_uut/carry_out_0__N_73 +)
+   Destination:    FF         Data in        uut_cpu/carry_reg/d_out_0__7  (to uut_cpu/clk_carry[0] +)
+
+   Delay:               0.648ns  (20.5% logic, 79.5% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.648ns physical path delay uut_cpu/alu_uut/SLICE_0 to uut_cpu/SLICE_47 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.667ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/alu_uut/SLICE_0 to uut_cpu/SLICE_47:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *t/SLICE_0.CLK to *ut/SLICE_0.Q1 uut_cpu/alu_uut/SLICE_0 (from uut_cpu/alu_uut/carry_out_0__N_73)
+ROUTE         1   e 0.515 *ut/SLICE_0.Q1 to *u/SLICE_47.M0 uut_cpu/carry_in_0 (to uut_cpu/clk_carry[0])
+                  --------
+                    0.648   (20.5% logic, 79.5% route), 1 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_5"></A>Preference: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;
+            640 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 1.379ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/X/d_out_i6  (from uut_cpu/clk_X[0] +)
+   Destination:    FF         Data in        uut_cpu/alu_uut/C_7__I_0_i6  (to uut_cpu/alu_uut/C_7__N_70 +)
+
+   Delay:               1.366ns  (24.5% logic, 75.5% route), 3 logic levels.
+
+ Constraint Details:
+
+      1.366ns physical path delay uut_cpu/SLICE_1 to uut_cpu/alu_uut/SLICE_26 meets
+      (delay constraint based on source clock period of 2.251ns and destination clock period of 13.097ns)
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 1.379ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/SLICE_1 to uut_cpu/alu_uut/SLICE_26:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *u/SLICE_1.CLK to *pu/SLICE_1.Q1 uut_cpu/SLICE_1 (from uut_cpu/clk_X[0])
+ROUTE         8   e 0.515 *pu/SLICE_1.Q1 to *t/SLICE_73.B0 data_out_c_5
+CTOF_DEL    ---     0.101 *t/SLICE_73.B0 to *t/SLICE_73.F0 uut_cpu/alu_uut/SLICE_73
+ROUTE         1   e 0.515 *t/SLICE_73.F0 to *t/SLICE_26.B1 uut_cpu/alu_uut/n4_adj_149
+CTOF_DEL    ---     0.101 *t/SLICE_26.B1 to *t/SLICE_26.F1 uut_cpu/alu_uut/SLICE_26
+ROUTE         1   e 0.001 *t/SLICE_26.F1 to */SLICE_26.DI1 uut_cpu/alu_uut/C_7__N_40 (to uut_cpu/alu_uut/C_7__N_70)
+                  --------
+                    1.366   (24.5% logic, 75.5% route), 3 logic levels.
+
+
+================================================================================
+<A name="map_twr_pref_1_6"></A>Preference: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;
+            36 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.769ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              uut_cpu/X/d_out_i6  (from uut_cpu/clk_X[0] +)
+   Destination:    FF         Data in        uut_cpu/alu_uut/carry_out_0__I_0  (to uut_cpu/alu_uut/carry_out_0__N_73 +)
+
+   Delay:               0.756ns  (73.4% logic, 26.6% route), 3 logic levels.
+
+ Constraint Details:
+
+      0.756ns physical path delay uut_cpu/SLICE_1 to uut_cpu/alu_uut/SLICE_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.769ns
+
+ Physical Path Details:
+
+      Data path uut_cpu/SLICE_1 to uut_cpu/alu_uut/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *u/SLICE_1.CLK to *pu/SLICE_1.Q1 uut_cpu/SLICE_1 (from uut_cpu/clk_X[0])
+ROUTE         8   e 0.199 *pu/SLICE_1.Q1 to *pu/SLICE_1.A0 data_out_c_5
+C0TOFCO_DE  ---     0.259 *pu/SLICE_1.A0 to *u/SLICE_1.FCO uut_cpu/SLICE_1
+ROUTE         1   e 0.001 *u/SLICE_1.FCO to *t/SLICE_0.FCI uut_cpu/alu_uut/n247
+FCITOF1_DE  ---     0.163 *t/SLICE_0.FCI to *ut/SLICE_0.F1 uut_cpu/alu_uut/SLICE_0
+ROUTE         1   e 0.001 *ut/SLICE_0.F1 to *t/SLICE_0.DI1 uut_cpu/alu_uut/C_7_N_33_8 (to uut_cpu/alu_uut/carry_out_0__N_73)
+                  --------
+                    0.756   (73.4% logic, 26.6% route), 3 logic levels.
+
+<A name="mtw1_hold_rs"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "ram_clk_0" 122.384000    |             |             |
+MHz ;                                   |     0.000 ns|     0.597 ns|   1  
+                                        |             |             |
+FREQUENCY NET "clk_in_c_0" 444.247000   |             |             |
+MHz ;                                   |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+FREQUENCY NET "rom_clk[0]" 95.157000    |             |             |
+MHz ;                                   |     0.000 ns|     1.192 ns|   2  
+                                        |             |             |
+FREQUENCY NET "uut_cpu/clk_X[0]"        |             |             |
+444.247000 MHz ;                        |     0.000 ns|     0.667 ns|   1  
+                                        |             |             |
+FREQUENCY NET "uut_cpu/clk_carry[0]"    |             |             |
+444.247000 MHz ;                        |     0.000 ns|     0.667 ns|   1  
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"uut_cpu/alu_uut/C_7__N_70" 76.353000   |             |             |
+MHz ;                                   |     0.000 ns|     1.379 ns|   3  
+                                        |             |             |
+FREQUENCY NET                           |             |             |
+"uut_cpu/alu_uut/carry_out_0__N_73"     |             |             |
+88.794000 MHz ;                         |     0.000 ns|     0.769 ns|   3  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="mtw1_hold_clkda"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 15 clocks:
+
+Clock Domain: uut_cpu/clk_carry[0]   Source: uut_cpu/SLICE_68.F1   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/alu_uut/carry_out_0__N_73   Source: uut_cpu/SLICE_69.F1
+      Covered under: FREQUENCY NET "uut_cpu/clk_carry[0]" 444.247000 MHz ;   Transfers: 1
+
+Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0   Loads: 4
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/alu_uut/C_7__N_70   Source: uut_cpu/SLICE_69.F0
+      Covered under: FREQUENCY NET "uut_cpu/clk_X[0]" 444.247000 MHz ;   Transfers: 8
+
+Clock Domain: uut_cpu/alu_uut/carry_out_0__N_73   Source: uut_cpu/SLICE_69.F1   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/clk_carry[0]   Source: uut_cpu/SLICE_68.F1
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;   Transfers: 8
+
+   Clock Domain: rom_clk[0]   Source: uut_cpu/clk_gen_uut/SLICE_23.Q0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;   Transfers: 12
+
+   Clock Domain: ram_clk_0   Source: uut_cpu/SLICE_74.Q0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/carry_out_0__N_73" 88.794000 MHz ;   Transfers: 8
+
+Clock Domain: uut_cpu/alu_uut/C_7__N_70   Source: uut_cpu/SLICE_69.F0   Loads: 4
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/clk_carry[0]   Source: uut_cpu/SLICE_68.F1
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;   Transfers: 8
+
+   Clock Domain: rom_clk[0]   Source: uut_cpu/clk_gen_uut/SLICE_23.Q0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;   Transfers: 12
+
+   Clock Domain: ram_clk_0   Source: uut_cpu/SLICE_74.Q0
+      Covered under: FREQUENCY NET "uut_cpu/alu_uut/C_7__N_70" 76.353000 MHz ;   Transfers: 8
+
+Clock Domain: uut_cpu/PC/d_out_7__N_121   Source: uut_cpu/SLICE_78.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_119   Source: uut_cpu/PC/SLICE_64.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_117   Source: uut_cpu/PC/SLICE_61.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_115   Source: uut_cpu/PC/SLICE_62.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_113   Source: uut_cpu/PC/SLICE_67.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_111   Source: uut_cpu/PC/SLICE_63.F1   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_109   Source: uut_cpu/PC/SLICE_66.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: uut_cpu/PC/d_out_7__N_104   Source: uut_cpu/PC/SLICE_65.F0   Loads: 2
+   No transfer within this clock domain is found
+
+Clock Domain: rom_clk[0]   Source: uut_cpu/clk_gen_uut/SLICE_23.Q0   Loads: 19
+   Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;
+
+   Data transfers from:
+   Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 8
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_121   Source: uut_cpu/SLICE_78.F1
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_119   Source: uut_cpu/PC/SLICE_64.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_117   Source: uut_cpu/PC/SLICE_61.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_115   Source: uut_cpu/PC/SLICE_62.F1
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_113   Source: uut_cpu/PC/SLICE_67.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_111   Source: uut_cpu/PC/SLICE_63.F1
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_109   Source: uut_cpu/PC/SLICE_66.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: uut_cpu/PC/d_out_7__N_104   Source: uut_cpu/PC/SLICE_65.F0
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+   Clock Domain: clk_in_c_0   Source: clk_in[0].PAD
+      Covered under: FREQUENCY NET "rom_clk[0]" 95.157000 MHz ;   Transfers: 1
+
+Clock Domain: ram_clk_0   Source: uut_cpu/SLICE_74.Q0   Loads: 1
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: uut_cpu/clk_X[0]   Source: uut_cpu/SLICE_68.F0
+      Covered under: FREQUENCY NET "ram_clk_0" 122.384000 MHz ;   Transfers: 8
+
+   Clock Domain: rom_clk[0]   Source: uut_cpu/clk_gen_uut/SLICE_23.Q0
+      Covered under: FREQUENCY NET "ram_clk_0" 122.384000 MHz ;   Transfers: 9
+
+Clock Domain: clk_in_c_0   Source: clk_in[0].PAD   Loads: 5
+   Covered under: FREQUENCY NET "clk_in_c_0" 444.247000 MHz ;
+
+
+<A name="mtw1_hold_ts"></A><B><U><big>Timing summary (Hold):</big></U></B>
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2132 paths, 8 nets, and 476 connections (92.97% coverage)
+
+
+
+<A name="mtw1_ts"></A><B><U><big>Timing summary (Setup and Hold):</big></U></B>
+---------------
+
+Timing errors: 870 (setup), 0 (hold)
+Score: 1000578230 (setup), 0 (hold)
+Cumulative negative slack: 1000578230 (1000578230+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

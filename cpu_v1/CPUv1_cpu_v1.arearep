@@ -1,0 +1,117 @@
+----------------------------------------------------------------------
+Report for cell computer.TECH
+Register bits:  49 of 5157 (0.950%)
+I/O cells:      10
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        18          100.0
+                              DP8KC         2          100.0
+                            FD1P3AX         1          100.0
+                            FD1P3IX         1          100.0
+                             FD1S1A         8          100.0
+                             FD1S1D         8          100.0
+                             FD1S1I         1          100.0
+                            FD1S3AX        13          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3BX         8          100.0
+                            FD1S3DX         8          100.0
+                                GSR         1          100.0
+                                 IB         2          100.0
+                               LUT4        78          100.0
+                                 OB         8          100.0
+                              PFUMX         8          100.0
+SUB MODULES
+                                RAM         1
+                                alu         1
+                            clk_gen         1
+                            counter         1
+                                cpu         1
+                             reg_1b         1
+                             reg_8b         1
+                                rom         1
+                              TOTAL       174
+----------------------------------------------------------------------
+Report for cell RAM.v1
+Instance Path : ram_s
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         1           50.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell rom.v1
+Instance Path : rom_s
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              DP8KC         1           50.0
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell cpu.v1
+Instance Path : uut_cpu
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        18          100.0
+                            FD1P3AX         1          100.0
+                            FD1P3IX         1          100.0
+                             FD1S1A         8          100.0
+                             FD1S1D         8          100.0
+                             FD1S1I         1          100.0
+                            FD1S3AX        13          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3BX         8          100.0
+                            FD1S3DX         8          100.0
+                               LUT4        77           98.7
+                              PFUMX         8          100.0
+SUB MODULES
+                                alu         1
+                            clk_gen         1
+                            counter         1
+                             reg_1b         1
+                             reg_8b         1
+                              TOTAL       157
+----------------------------------------------------------------------
+Report for cell clk_gen.v1
+Instance Path : uut_cpu.clk_gen_uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1P3AX         1          100.0
+                            FD1P3IX         1          100.0
+                            FD1S3AX         4           30.8
+                            FD1S3AY         1          100.0
+                               LUT4         4            5.1
+                              TOTAL        11
+----------------------------------------------------------------------
+Report for cell reg_1b.v1
+Instance Path : uut_cpu.carry_reg
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            7.7
+                              TOTAL         1
+----------------------------------------------------------------------
+Report for cell alu.v1
+Instance Path : uut_cpu.alu_uut
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        13           72.2
+                             FD1S1A         8          100.0
+                             FD1S1I         1          100.0
+                               LUT4        35           44.9
+                              PFUMX         8          100.0
+                              TOTAL        65
+----------------------------------------------------------------------
+Report for cell reg_8b.v1
+Instance Path : uut_cpu.X
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         8           61.5
+                              TOTAL         8
+----------------------------------------------------------------------
+Report for cell counter.v1
+Instance Path : uut_cpu.PC
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5           27.8
+                             FD1S1D         8          100.0
+                            FD1S3BX         8          100.0
+                            FD1S3DX         8          100.0
+                               LUT4        25           32.1
+                              TOTAL        54

@@ -1,0 +1,405 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Thu May 28 16:36:30 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     computer
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk5 [get_nets \uut_cpu/alu_uut/C_7__N_70]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk4 [get_nets \uut_cpu/clk_carry[0]]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk3 [get_nets clk_in_c_0]
+            30 items scored, 8 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 1.250ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \uut_cpu/clk_gen_uut/clk_step3[0]_35  (from clk_in_c_0 +)
+   Destination:    FD1S1D     CD             \uut_cpu/PC/i69  (to clk_in_c_0 +)
+
+   Delay:                   6.104ns  (28.6% logic, 71.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.104ns data_path \uut_cpu/clk_gen_uut/clk_step3[0]_35 to \uut_cpu/PC/i69 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 1.250ns
+
+ Path Details: \uut_cpu/clk_gen_uut/clk_step3[0]_35 to \uut_cpu/PC/i69
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \uut_cpu/clk_gen_uut/clk_step3[0]_35 (from clk_in_c_0)
+Route         3   e 1.099                                  \uut_cpu/clk_step3[0]
+LUT4        ---     0.448              A to Z              \uut_cpu/i7_4_lut
+Route         1   e 0.788                                  \uut_cpu/n17
+LUT4        ---     0.448              A to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_144
+                  --------
+                    6.104  (28.6% logic, 71.4% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 1.250ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \uut_cpu/clk_gen_uut/clk_step3[0]_35  (from clk_in_c_0 +)
+   Destination:    FD1S1D     CD             \uut_cpu/PC/i73  (to clk_in_c_0 +)
+
+   Delay:                   6.104ns  (28.6% logic, 71.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.104ns data_path \uut_cpu/clk_gen_uut/clk_step3[0]_35 to \uut_cpu/PC/i73 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 1.250ns
+
+ Path Details: \uut_cpu/clk_gen_uut/clk_step3[0]_35 to \uut_cpu/PC/i73
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \uut_cpu/clk_gen_uut/clk_step3[0]_35 (from clk_in_c_0)
+Route         3   e 1.099                                  \uut_cpu/clk_step3[0]
+LUT4        ---     0.448              A to Z              \uut_cpu/i7_4_lut
+Route         1   e 0.788                                  \uut_cpu/n17
+LUT4        ---     0.448              A to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_65_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_141
+                  --------
+                    6.104  (28.6% logic, 71.4% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 1.250ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3AX    CK             \uut_cpu/clk_gen_uut/clk_step3[0]_35  (from clk_in_c_0 +)
+   Destination:    FD1S1D     CD             \uut_cpu/PC/i77  (to clk_in_c_0 +)
+
+   Delay:                   6.104ns  (28.6% logic, 71.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.104ns data_path \uut_cpu/clk_gen_uut/clk_step3[0]_35 to \uut_cpu/PC/i77 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 1.250ns
+
+ Path Details: \uut_cpu/clk_gen_uut/clk_step3[0]_35 to \uut_cpu/PC/i77
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \uut_cpu/clk_gen_uut/clk_step3[0]_35 (from clk_in_c_0)
+Route         3   e 1.099                                  \uut_cpu/clk_step3[0]
+LUT4        ---     0.448              A to Z              \uut_cpu/i7_4_lut
+Route         1   e 0.788                                  \uut_cpu/n17
+LUT4        ---     0.448              A to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_64_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_138
+                  --------
+                    6.104  (28.6% logic, 71.4% route), 4 logic levels.
+
+Warning: 6.250 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets ram_clk[0]]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets rom_clk[0]]
+            349 items scored, 217 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 4.998ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         DP8KC      CLKB           \rom_s/rom_0_0_0  (from rom_clk[0] +)
+   Destination:    FD1S3DX    CD             \uut_cpu/PC/d_out_i2_78_79_reset  (to rom_clk[0] +)
+
+   Delay:                   9.852ns  (58.9% logic, 41.1% route), 4 logic levels.
+
+ Constraint Details:
+
+      9.852ns data_path \rom_s/rom_0_0_0 to \uut_cpu/PC/d_out_i2_78_79_reset violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.998ns
+
+ Path Details: \rom_s/rom_0_0_0 to \uut_cpu/PC/d_out_i2_78_79_reset
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+EBSR_CO     ---     4.462           CLKB to DOB[9]         \rom_s/rom_0_0_0 (from rom_clk[0])
+Route         1   e 0.788                                  rom_out[14]
+LUT4        ---     0.448              D to Z              \uut_cpu/i7_4_lut
+Route         1   e 0.788                                  \uut_cpu/n17
+LUT4        ---     0.448              A to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_64_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_138
+                  --------
+                    9.852  (58.9% logic, 41.1% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 4.998ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         DP8KC      CLKB           \rom_s/rom_0_0_0  (from rom_clk[0] +)
+   Destination:    FD1S3BX    PD             \uut_cpu/PC/d_out_i6_94_95_set  (to rom_clk[0] +)
+
+   Delay:                   9.852ns  (58.9% logic, 41.1% route), 4 logic levels.
+
+ Constraint Details:
+
+      9.852ns data_path \rom_s/rom_0_0_0 to \uut_cpu/PC/d_out_i6_94_95_set violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.998ns
+
+ Path Details: \rom_s/rom_0_0_0 to \uut_cpu/PC/d_out_i6_94_95_set
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+EBSR_CO     ---     4.462           CLKB to DOB[9]         \rom_s/rom_0_0_0 (from rom_clk[0])
+Route         1   e 0.788                                  rom_out[14]
+LUT4        ---     0.448              D to Z              \uut_cpu/i7_4_lut
+Route         1   e 0.788                                  \uut_cpu/n17
+LUT4        ---     0.448              A to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_52_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_109
+                  --------
+                    9.852  (58.9% logic, 41.1% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 4.998ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         DP8KC      CLKB           \rom_s/rom_0_0_0  (from rom_clk[0] +)
+   Destination:    FD1S3BX    PD             \uut_cpu/PC/d_out_i4_86_87_set  (to rom_clk[0] +)
+
+   Delay:                   9.852ns  (58.9% logic, 41.1% route), 4 logic levels.
+
+ Constraint Details:
+
+      9.852ns data_path \rom_s/rom_0_0_0 to \uut_cpu/PC/d_out_i4_86_87_set violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 4.998ns
+
+ Path Details: \rom_s/rom_0_0_0 to \uut_cpu/PC/d_out_i4_86_87_set
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+EBSR_CO     ---     4.462           CLKB to DOB[9]         \rom_s/rom_0_0_0 (from rom_clk[0])
+Route         1   e 0.788                                  rom_out[14]
+LUT4        ---     0.448              D to Z              \uut_cpu/i7_4_lut
+Route         1   e 0.788                                  \uut_cpu/n17
+LUT4        ---     0.448              A to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_54_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_113
+                  --------
+                    9.852  (58.9% logic, 41.1% route), 4 logic levels.
+
+Warning: 9.998 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets \uut_cpu/clk_X[0]]
+            64 items scored, 64 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 1.486ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \uut_cpu/X/d_out_i2  (from \uut_cpu/clk_X[0] +)
+   Destination:    FD1S1D     CD             \uut_cpu/PC/i69  (to \uut_cpu/clk_X[0] +)
+
+   Delay:                   6.340ns  (27.6% logic, 72.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.340ns data_path \uut_cpu/X/d_out_i2 to \uut_cpu/PC/i69 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 1.486ns
+
+ Path Details: \uut_cpu/X/d_out_i2 to \uut_cpu/PC/i69
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \uut_cpu/X/d_out_i2 (from \uut_cpu/clk_X[0])
+Route         8   e 1.335                                  data_out_c_1
+LUT4        ---     0.448              D to Z              \uut_cpu/i6_4_lut
+Route         1   e 0.788                                  \uut_cpu/n16
+LUT4        ---     0.448              D to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_144
+                  --------
+                    6.340  (27.6% logic, 72.4% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 1.486ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \uut_cpu/X/d_out_i2  (from \uut_cpu/clk_X[0] +)
+   Destination:    FD1S1D     CD             \uut_cpu/PC/i73  (to \uut_cpu/clk_X[0] +)
+
+   Delay:                   6.340ns  (27.6% logic, 72.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.340ns data_path \uut_cpu/X/d_out_i2 to \uut_cpu/PC/i73 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 1.486ns
+
+ Path Details: \uut_cpu/X/d_out_i2 to \uut_cpu/PC/i73
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \uut_cpu/X/d_out_i2 (from \uut_cpu/clk_X[0])
+Route         8   e 1.335                                  data_out_c_1
+LUT4        ---     0.448              D to Z              \uut_cpu/i6_4_lut
+Route         1   e 0.788                                  \uut_cpu/n16
+LUT4        ---     0.448              D to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_65_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_141
+                  --------
+                    6.340  (27.6% logic, 72.4% route), 4 logic levels.
+
+
+Error:  The following path violates requirements by 1.486ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AX    CK             \uut_cpu/X/d_out_i2  (from \uut_cpu/clk_X[0] +)
+   Destination:    FD1S1D     CD             \uut_cpu/PC/i77  (to \uut_cpu/clk_X[0] +)
+
+   Delay:                   6.340ns  (27.6% logic, 72.4% route), 4 logic levels.
+
+ Constraint Details:
+
+      6.340ns data_path \uut_cpu/X/d_out_i2 to \uut_cpu/PC/i77 violates
+      5.000ns delay constraint less
+      0.146ns L_S requirement (totaling 4.854ns) by 1.486ns
+
+ Path Details: \uut_cpu/X/d_out_i2 to \uut_cpu/PC/i77
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.403             CK to Q              \uut_cpu/X/d_out_i2 (from \uut_cpu/clk_X[0])
+Route         8   e 1.335                                  data_out_c_1
+LUT4        ---     0.448              D to Z              \uut_cpu/i6_4_lut
+Route         1   e 0.788                                  \uut_cpu/n16
+LUT4        ---     0.448              D to Z              \uut_cpu/PC/load_0__I_0_4_lut
+Route        16   e 1.516                                  \uut_cpu/PC/d_out_7__N_105
+LUT4        ---     0.448              C to Z              \uut_cpu/PC/d_out_7__N_105_I_0_64_2_lut_3_lut
+Route         2   e 0.954                                  \uut_cpu/PC/d_out_7__N_138
+                  --------
+                    6.340  (27.6% logic, 72.4% route), 4 logic levels.
+
+Warning: 6.486 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk5 [get_nets                          |             |             |
+\uut_cpu/alu_uut/C_7__N_70]             |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets \uut_cpu/clk_carry[0]]   |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets clk_in_c_0]              |     5.000 ns|     6.250 ns|     4 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets ram_clk[0]]              |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets rom_clk[0]]              |     5.000 ns|     9.998 ns|     4 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets \uut_cpu/clk_X[0]]       |     5.000 ns|     6.486 ns|     4 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+3 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\uut_cpu/PC/d_out_7__N_105              |      16|      96|     33.22%
+                                        |        |        |
+\uut_cpu/PC/n249                        |       1|      90|     31.14%
+                                        |        |        |
+\uut_cpu/PC/n250                        |       1|      90|     31.14%
+                                        |        |        |
+\uut_cpu/n17                            |       1|      48|     16.61%
+                                        |        |        |
+\uut_cpu/PC/d_out_7__N_96[7]            |       2|      42|     14.53%
+                                        |        |        |
+\uut_cpu/PC/n248                        |       1|      42|     14.53%
+                                        |        |        |
+\uut_cpu/PC/n251                        |       1|      42|     14.53%
+                                        |        |        |
+rom_address_out[0]                      |       3|      42|     14.53%
+                                        |        |        |
+\uut_cpu/n16                            |       1|      32|     11.07%
+                                        |        |        |
+\uut_cpu/PC/d_out_7__N_96[5]            |       2|      30|     10.38%
+                                        |        |        |
+\uut_cpu/PC/d_out_7__N_96[6]            |       2|      30|     10.38%
+                                        |        |        |
+rom_address_out[1]                      |       3|      30|     10.38%
+                                        |        |        |
+rom_address_out[2]                      |       3|      30|     10.38%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 289  Score: 413780
+
+Constraints cover  443 paths, 103 nets, and 238 connections (44.3% coverage)
+
+
+Peak memory: 61407232 bytes, TRCE: 2105344 bytes, DLYMAN: 163840 bytes
+CPU_TIME_REPORT: 0 secs 

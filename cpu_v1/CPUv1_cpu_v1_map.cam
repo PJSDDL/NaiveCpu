@@ -1,0 +1,30 @@
+[ START MERGED ]
+[ END MERGED ]
+[ START CLIPPED ]
+scuba_vlo
+uut_cpu/PC/d_out_7__I_0_9/S1
+uut_cpu/PC/d_out_7__I_0_9/CO
+uut_cpu/PC/d_out_7__I_0_1/S0
+uut_cpu/PC/d_out_7__I_0_1/CI
+uut_cpu/alu_uut/A_7__I_0_0/S1
+uut_cpu/alu_uut/A_7__I_0_0/S0
+uut_cpu/alu_uut/A_7__I_0_0/CI
+uut_cpu/alu_uut/A_7__I_0_7/S1
+uut_cpu/alu_uut/A_7__I_0_7/S0
+uut_cpu/alu_uut/A_7__I_0_8/S0
+uut_cpu/alu_uut/A_7__I_0_8/CO
+uut_cpu/alu_uut/A_7__I_0_87_9/S1
+uut_cpu/alu_uut/A_7__I_0_87_9/CO
+uut_cpu/alu_uut/add_89_1/S0
+uut_cpu/alu_uut/add_89_1/CI
+uut_cpu/alu_uut/A_7__I_0_87_1/S0
+uut_cpu/alu_uut/A_7__I_0_87_1/CI
+uut_cpu/alu_uut/add_89_9/CO
+[ END CLIPPED ]
+[ START DESIGN PREFS ]
+SCHEMATIC START ;
+# map:  version Diamond (64-bit) 3.13.0.56.2 -- WARNING: Map write only section -- Thu May 28 16:36:31 2026
+
+SYSCONFIG SDM_PORT=DISABLE SLAVE_SPI_PORT=DISABLE I2C_PORT=DISABLE MASTER_SPI_PORT=DISABLE COMPRESS_CONFIG=ON CONFIGURATION=CFG MY_ASSP=OFF ONE_TIME_PROGRAM=OFF CONFIG_SECURE=OFF MCCLK_FREQ=2.08 JTAG_PORT=ENABLE ENABLE_TRANSFR=DISABLE SHAREDEBRINIT=DISABLE MUX_CONFIGURATION_PORTS=DISABLE BACKGROUND_RECONFIG=OFF INBUF=ON ;
+SCHEMATIC END ;
+[ END DESIGN PREFS ]

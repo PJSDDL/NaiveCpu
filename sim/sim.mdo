@@ -1,0 +1,29 @@
+if {![file exists "E:/CPUv1/sim/sim.mpf"]} { 
+	project new "E:/CPUv1/sim" sim
+	project addfile "E:/CPUv1/RAM.v"
+	project addfile "E:/CPUv1/rom.v"
+	project addfile "E:/CPUv1/reg.v"
+	project addfile "E:/CPUv1/ALU.v"
+	project addfile "E:/CPUv1/clk_gen.v"
+	project addfile "E:/CPUv1/cpu.v"
+	project addfile "E:/CPUv1/computer.v"
+	project addfile "E:/CPUv1/sim.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+E:/CPUv1  -work work  "E:/CPUv1/RAM.v"
+	vlog  +incdir+E:/CPUv1  -work work  "E:/CPUv1/rom.v"
+	vlog  +incdir+E:/CPUv1  -work work  "E:/CPUv1/reg.v"
+	vlog  +incdir+E:/CPUv1  -work work  "E:/CPUv1/ALU.v"
+	vlog  +incdir+E:/CPUv1  -work work  "E:/CPUv1/clk_gen.v"
+	vlog  +incdir+E:/CPUv1  -work work  "E:/CPUv1/cpu.v"
+	vlog  +incdir+E:/CPUv1  -work work  "E:/CPUv1/computer.v"
+	vlog  +incdir+E:/CPUv1  -work work  "E:/CPUv1/sim.v"
+} else {
+	project open "E:/CPUv1/sim/sim"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  divider_tb
+view wave
+add wave /*
+run 1000ns

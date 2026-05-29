@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/computer.v(1): </Dynamic>
+            <Dynamic>computer</Dynamic>
+            <Navigation>e:/cpuv1/computer.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/cpu.v(1): </Dynamic>
+            <Dynamic>cpu</Dynamic>
+            <Navigation>e:/cpuv1/cpu.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/clk_gen.v(1): </Dynamic>
+            <Dynamic>clk_gen</Dynamic>
+            <Navigation>e:/cpuv1/clk_gen.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/alu.v(1): </Dynamic>
+            <Dynamic>alu</Dynamic>
+            <Navigation>e:/cpuv1/alu.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/reg.v(1): </Dynamic>
+            <Dynamic>reg_8b</Dynamic>
+            <Navigation>e:/cpuv1/reg.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/reg.v(18): </Dynamic>
+            <Dynamic>reg_1b</Dynamic>
+            <Navigation>e:/cpuv1/reg.v</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/reg.v(35): </Dynamic>
+            <Dynamic>counter</Dynamic>
+            <Navigation>e:/cpuv1/reg.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/rom.v(8): </Dynamic>
+            <Dynamic>rom</Dynamic>
+            <Navigation>e:/cpuv1/rom.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1120): </Dynamic>
+            <Dynamic>VHI</Dynamic>
+            <Navigation>E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1120</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): </Dynamic>
+            <Dynamic>VLO</Dynamic>
+            <Navigation>E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1124</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC_renamed_due_excessive_length_1</Dynamic>
+            <Navigation>E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/cpuv1/ram.v(8): </Dynamic>
+            <Dynamic>RAM</Dynamic>
+            <Navigation>e:/cpuv1/ram.v</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1291): </Dynamic>
+            <Dynamic>DP8KC(CSDECODE_B=&quot;0b111&quot;,RESETMODE=&quot;ASYNC&quot;)</Dynamic>
+            <Navigation>E:/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
+            <Navigation>1291</Navigation>
+        </Message>
+        <Message>
+            <ID>35931002</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/cpuv1/computer.v(33): </Dynamic>
+            <Dynamic>rst</Dynamic>
+            <Navigation>e:/cpuv1/computer.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\uut_cpu/clk_gen_uut/statu</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=ram_clk_0 loads=1 clock_loads=1
+   Signal=uut_cpu/clk_X[0] loads=4 clock_loads=4
+   Signal=uut_cpu/clk_carry[0] loads=1 clock_loads=1
+   Signal=uut_cpu/alu_uut/C_7__N_70 loads=4 clock_loads=4
+   Signal=uut_cpu/alu_uut/carry_out_0__N_73 loads=1 clock_loads=1
+   Signal=uut_cpu/PC/d_out_7__N_109 loads=2 clock_loads=   ....   l=uut_cpu/PC/d_out_7__N_119 loads=2 clock_loads=1
+   Signal=uut_cpu/PC/d_out_7__N_117 loads=2 clock_loads=1
+   Signal=uut_cpu/PC/d_out_7__N_104 loads=2 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=ram_clk_0 loads=1 clock_loads=1
+   Signal=uut_cpu/clk_X[0] loads=4 clock_loads=4
+   Signal=uut_cpu/clk_carry[0] loads=1 clock_loads=1
+   Signal=uut_cpu/alu_uut/C_7__N_70 loads=4 clock_loads=4
+   Signal=uut_cpu/alu_uut/carry_out_0__N_73 loads=1 clock_loads=1
+   Signal=uut_cpu/PC/d_out_7__N_109 loads=2 clock_loads=   ....   l=uut_cpu/PC/d_out_7__N_119 loads=2 clock_loads=1
+   Signal=uut_cpu/PC/d_out_7__N_117 loads=2 clock_loads=1
+   Signal=uut_cpu/PC/d_out_7__N_104 loads=2 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

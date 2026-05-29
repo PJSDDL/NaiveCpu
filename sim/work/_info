@@ -1,0 +1,256 @@
+m255
+K4
+z2
+!s11e vcom 2023.3 2023.07, Jul 18 2023
+!s11f vlog 2023.3 2023.07, Jul 18 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/CPUv1/sim
+valu
+Z1 !s110 1779949360
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+2E:/CPUv1/ALU.v
+!i10b 1
+!s100 ;PT0kSik^P0G43[mKaL9c1
+Ih^JYRm2eehbOJOm_;hiXl2
+R0
+w1779867610
+8E:/CPUv1/ALU.v
+FE:/CPUv1/ALU.v
+!i122 52
+L0 1 27
+Z3 OT;L;2023.3;77
+31
+Z4 !s108 1779949360.000000
+!s107 E:/CPUv1/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CPUv1/ALU.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -O0
+Z6 tCvgOpt 0
+vclk_gen
+Z7 !s110 1779863743
+R2
+r1
+!s85 0
+2E:/CPUv1/clk_gen.v
+!i10b 1
+!s100 b1GCW514cGJT?:YLmMC1Z2
+I?bbEYeLJ=^FMSEC=f<A<O3
+R0
+w1779697454
+8E:/CPUv1/clk_gen.v
+FE:/CPUv1/clk_gen.v
+!i122 20
+L0 1 47
+R3
+31
+Z8 !s108 1779863743.000000
+!s107 E:/CPUv1/clk_gen.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CPUv1/clk_gen.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vcomputer
+Z9 !s125 LATTICE_CONN
+R1
+R2
+r1
+!s85 0
+2E:/CPUv1/computer.v
+!i10b 1
+!s100 o:<oFMC?LhcDa0JlnT?Mb2
+IFo?=Z:1kXFVI6;6<J8V>P2
+R0
+w1779866574
+8E:/CPUv1/computer.v
+FE:/CPUv1/computer.v
+!i122 54
+L0 1 48
+R3
+31
+R4
+!s107 E:/CPUv1/computer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CPUv1/computer.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vcounter
+R7
+R2
+r1
+!s85 0
+Z10 2E:/CPUv1/reg.v
+!i10b 1
+!s100 6kId6Sd`62>]6nND=TiK_1
+IJH0_@h6@P6S:H=B4ehkL21
+R0
+Z11 w1779849566
+Z12 8E:/CPUv1/reg.v
+Z13 FE:/CPUv1/reg.v
+!i122 18
+L0 35 19
+R3
+31
+R8
+Z14 !s107 E:/CPUv1/reg.v|
+Z15 !s90 -reportprogress|300|-work|work|-stats=none|E:/CPUv1/reg.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vcpu
+R1
+R2
+r1
+!s85 0
+2E:/CPUv1/cpu.v
+!i10b 1
+!s100 RRmd_ZjDn@Eee0ezelkTX0
+IfkJ[cZ6z_1:L@SibKSNdi1
+R0
+w1779936391
+8E:/CPUv1/cpu.v
+FE:/CPUv1/cpu.v
+!i122 53
+L0 1 89
+R3
+31
+R4
+!s107 E:/CPUv1/cpu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CPUv1/cpu.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vdivider_tb
+R7
+R2
+r1
+!s85 0
+2E:/CPUv1/sim.v
+!i10b 1
+!s100 Y79dNC4k_joYlOPhzzB223
+IC?9c^^81i>BP1a^6a?82A0
+R0
+w1779699693
+8E:/CPUv1/sim.v
+FE:/CPUv1/sim.v
+!i122 23
+L0 3 30
+R3
+31
+R8
+!s107 E:/CPUv1/sim.v|
+!s90 -reportprogress|300|-work|work|-stats=none|E:/CPUv1/sim.v|
+!s101 -O0
+!i113 1
+R5
+R6
+vRAM
+R9
+!s110 1779866520
+R2
+r1
+!s85 0
+2E:/CPUv1/RAM.v
+!i10b 1
+!s100 Y^:G;O@B9L[H7<S]Q^1ho3
+I>5hQoJBWL:C6Ao>=mh0WW0
+R0
+w1779762974
+8E:/CPUv1/RAM.v
+FE:/CPUv1/RAM.v
+!i122 36
+L0 8 89
+R3
+31
+!s108 1779866520.000000
+!s107 E:/CPUv1/RAM.v|
+!s90 -reportprogress|300|-work|work|-O0|E:/CPUv1/RAM.v|
+!s101 -O0
+!i113 1
+R5
+R6
+n@r@a@m
+vreg_1b
+R7
+R2
+r1
+!s85 0
+R10
+!i10b 1
+!s100 XAlE_Xm]GoO<o61[B]BoF1
+I1[?]l[2B_F5f5WcPCZXe:1
+R0
+R11
+R12
+R13
+!i122 18
+L0 18 16
+R3
+31
+R8
+R14
+R15
+!s101 -O0
+!i113 1
+R5
+R6
+vreg_8b
+R7
+R2
+r1
+!s85 0
+R10
+!i10b 1
+!s100 d<<Fi:LO=IB368lGhTYmI1
+IY6=0aF4n15aoBGmKPL6T?1
+R0
+R11
+R12
+R13
+!i122 18
+L0 1 16
+R3
+31
+R8
+R14
+R15
+!s101 -O0
+!i113 1
+R5
+R6
+vrom
+2E:/CPUv1/rom.v
+R9
+!s110 1779956952
+!i10b 1
+!s100 ;[;oTlMU3ofif40`NVd8R0
+I;LXe_MI]R?>G[GCaA:oUX3
+R0
+w1779956935
+8E:/CPUv1/rom.v
+FE:/CPUv1/rom.v
+!i122 58
+L0 8 88
+R2
+R3
+r1
+!s85 0
+31
+!s108 1779956952.000000
+!s107 E:/CPUv1/rom.v|
+!s90 -reportprogress|300|-work|work|-O0|E:/CPUv1/rom.v|
+!s101 -O0
+!i113 1
+R5
+R6
