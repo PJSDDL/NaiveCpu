@@ -1,0 +1,92 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn260430161843"></A><B><U><big>pn260430161843</big></U></B>
+#Start recording tcl command: 4/30/2026 10:28:04
+#Project Location: E:/CPUv1; Project name: CPUv1
+prj_project new -name "CPUv1" -impl "cpu_v1" -dev LCMXO2-4000HC-5FG484C -synthesis "lse"
+prj_project save
+prj_src add "E:/CPUv1/cpu.v"
+prj_src add "E:/CPUv1/sim.v"
+prj_src syn_sim -src "E:/CPUv1/sim.v" SimulateOnly
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/rom.v"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/sim/sim.spf"
+prj_src add "E:/CPUv1/rom.ipx"
+prj_run Synthesis -impl cpu_v1 -task Lattice_Synthesis
+prj_run Synthesis -impl cpu_v1 -task Lattice_Synthesis
+prj_run Synthesis -impl cpu_v1 -task Lattice_Synthesis
+prj_src remove "E:/CPUv1/rom.v"
+prj_run Synthesis -impl cpu_v1 -task Lattice_Synthesis
+prj_run Map -impl cpu_v1
+prj_run PAR -impl cpu_v1 -task PARTrace
+prj_run PAR -impl cpu_v1
+prj_run Export -impl cpu_v1
+prj_run PAR -impl cpu_v1
+#Stop recording: 4/30/2026 16:18:43
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

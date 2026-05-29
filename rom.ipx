@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiamondModule name="rom" module="rom" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2026 05 28 16:28:56.533" version="5.4" type="Module" synthesis="lse" source_format="Verilog HDL">
+  <Package>
+		<File name="" type="" modified="2026 05 28 16:28:56.357"/>
+		<File name="e:/cpuv1/rom.mem" type="mem" modified="2026 05 28 16:28:40.170"/>
+		<File name="rom.lpc" type="lpc" modified="2026 05 28 16:28:55.867"/>
+		<File name="rom.v" type="top_level_verilog" modified="2026 05 28 16:28:55.899"/>
+		<File name="rom_tmpl.v" type="template_verilog" modified="2026 05 28 16:28:55.899"/>
+		<File name="tb_rom_tmpl.v" type="testbench_verilog" modified="2026 05 28 16:28:55.900"/>
+  </Package>
+</DiamondModule>

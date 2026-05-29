@@ -1,0 +1,52 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-4000HC
+PartName=LCMXO2-4000HC-5FG484C
+SpeedGrade=5
+Package=FPBGA484
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=RAM_DQ
+CoreRevision=7.5
+ModuleName=RAM
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=05/26/2026
+Time=10:36:14
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=[MSB:LSB]
+IO=0
+Address=256
+Data=8
+enByte=0
+ByteSize=9
+OutputEn=0
+ClockEn=0
+Optimization=Speed
+Reset=Sync
+Reset1=Sync
+Init=0
+MemFile=
+MemFormat=bin
+EnECC=0
+Pipeline=0
+Write=Normal
+init_data=0
+no_init=0
+
+[FilesGenerated]
+=mem
+
+[Command]
+cmd_line= -w -n RAM -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type ramdq -device LCMXO2-4000HC -addr_width 8 -data_width 8 -num_words 256 -cascade -1 -mem_init0 -writemode NORMAL

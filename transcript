@@ -1,0 +1,154 @@
+# Reading pref.tcl
+# do {E:/CPUv1/sim/sim.mdo}
+# Loading project sim
+# Compile of rom.v was successful.
+# Compile of ALU.v was successful.
+# Compile of cpu.v was successful.
+# Compile of computer.v was successful.
+# 4 compiles, 0 failed with no errors.
+# vsim -L work -L pmi_work -L ovi_machxo2 divider_tb 
+# Start time: 14:22:40 on May 28,2026
+# //  ModelSim - Lattice FPGA Edition 2023.3 Jul 18 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading work.divider_tb
+# Loading work.computer
+# Loading work.cpu
+# Loading work.clk_gen
+# Loading work.alu
+# Loading work.reg_8b
+# Loading work.reg_1b
+# Loading work.counter
+# Loading work.rom
+# Loading ovi_machxo2.VHI
+# Loading ovi_machxo2.VLO
+# Loading ovi_machxo2.DP8KC
+# Loading work.RAM
+# Loading ovi_machxo2.GSR
+# Loading ovi_machxo2.PUR
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /divider_tb/uut File: E:/CPUv1/sim.v Line: 10
+# ** Warning: (vsim-3722) E:/CPUv1/sim.v(10): [TFMPC] - Missing connection for port 'data_out'.
+# .main_pane.wave.interior.cs.body.pw.wf
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /divider_tb/uut File: E:/CPUv1/sim.v Line: 10
+# ** Warning: (vsim-3722) E:/CPUv1/sim.v(10): [TFMPC] - Missing connection for port 'data_out'.
+do E:/CPUv1/sim/wave.do
+run -all
+vlog -work work -O0 E:/CPUv1/rom.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 14:25:24 on May 28,2026
+# vlog -reportprogress 300 -work work -O0 E:/CPUv1/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 14:25:24 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -O0 E:/CPUv1/rom.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 14:25:27 on May 28,2026
+# vlog -reportprogress 300 -work work -O0 E:/CPUv1/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 14:25:27 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -work work -refresh -force_refresh
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 14:25:30 on May 28,2026
+# vlog -reportprogress 300 -work work -refresh -force_refresh 
+# -- Refreshing module alu
+# -- Refreshing module clk_gen
+# -- Refreshing module computer
+# -- Refreshing module counter
+# -- Refreshing module cpu
+# -- Refreshing module divider_tb
+# -- Refreshing module RAM
+# -- Refreshing module reg_1b
+# -- Refreshing module reg_8b
+# -- Refreshing module rom
+# End time: 14:25:30 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -work work -refresh -force_refresh
+# Model Technology ModelSim - Lattice FPGA Edition vcom 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 14:25:30 on May 28,2026
+# vcom -reportprogress 300 -work work -refresh -force_refresh 
+# -- Skipping module alu
+# -- Skipping module clk_gen
+# -- Skipping module computer
+# -- Skipping module counter
+# -- Skipping module cpu
+# -- Skipping module divider_tb
+# -- Skipping module RAM
+# -- Skipping module reg_1b
+# -- Skipping module reg_8b
+# -- Skipping module rom
+# End time: 14:25:30 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.divider_tb
+# Loading work.computer
+# Loading work.cpu
+# Loading work.clk_gen
+# Loading work.alu
+# Loading work.reg_8b
+# Loading work.reg_1b
+# Loading work.counter
+# Loading work.rom
+# Loading work.RAM
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /divider_tb/uut File: E:/CPUv1/sim.v Line: 10
+# ** Warning: (vsim-3722) E:/CPUv1/sim.v(10): [TFMPC] - Missing connection for port 'data_out'.
+run -all
+# WARNING: No extended dataflow license exists
+vlog -work work -O0 E:/CPUv1/rom.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 16:25:41 on May 28,2026
+# vlog -reportprogress 300 -work work -O0 E:/CPUv1/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:25:41 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /divider_tb/uut File: E:/CPUv1/sim.v Line: 10
+# ** Warning: (vsim-3722) E:/CPUv1/sim.v(10): [TFMPC] - Missing connection for port 'data_out'.
+run -all
+vlog -work work -O0 E:/CPUv1/rom.v
+# Model Technology ModelSim - Lattice FPGA Edition vlog 2023.3 Compiler 2023.07 Jul 18 2023
+# Start time: 16:29:12 on May 28,2026
+# vlog -reportprogress 300 -work work -O0 E:/CPUv1/rom.v 
+# -- Compiling module rom
+# 
+# Top level modules:
+# 	rom
+# End time: 16:29:12 on May 28,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# Loading work.rom
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'uut'.  Expected 3, found 2.
+#    Time: 0 ps  Iteration: 0  Instance: /divider_tb/uut File: E:/CPUv1/sim.v Line: 10
+# ** Warning: (vsim-3722) E:/CPUv1/sim.v(10): [TFMPC] - Missing connection for port 'data_out'.
+run -all
+# End time: 17:16:19 on May 28,2026, Elapsed time: 2:53:39
+# Errors: 0, Warnings: 3

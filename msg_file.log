@@ -1,0 +1,32 @@
+SCUBA, Version Diamond (64-bit) 3.13.0.56.2
+Thu May 28 16:28:55 2026
+  
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+  
+BEGIN SCUBA Module Synthesis
+  
+    Issued command   : E:\diamond\3.13\ispfpga\bin\nt64\scuba.exe -w -n rom -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type romblk -device LCMXO2-4000HC -addr_width 8 -data_width 16 -num_words 256 -cascade -1 -memfile e:/cpuv1/rom.mem -memformat bin 
+    Circuit name     : rom
+    Module type      : EBR_ROM
+    Module Version   : 5.4
+    Ports            : 
+    Inputs       : Address[7:0], OutClock, OutClockEn, Reset
+    Outputs      : Q[15:0]
+    I/O buffer       : not inserted
+    Memory file      : e:/cpuv1/rom.mem
+    EDIF output      : rom.edn
+    Verilog output   : rom.v
+    Verilog template : rom_tmpl.v
+    Verilog testbench: tb_rom_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : rom.srp
+    Estimated Resource Usage:
+            EBR : 1
+  
+END   SCUBA Module Synthesis
+

@@ -1,0 +1,52 @@
+[Device]
+Family=machxo2
+PartType=LCMXO2-4000HC
+PartName=LCMXO2-4000HC-5FG484C
+SpeedGrade=5
+Package=FPBGA484
+OperatingCondition=COM
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=LPM
+CoreStatus=Demo
+CoreName=ROM
+CoreRevision=5.4
+ModuleName=rom
+SourceFormat=Verilog HDL
+ParameterFileVersion=1.0
+Date=05/28/2026
+Time=16:28:55
+
+[Parameters]
+Verilog=1
+VHDL=0
+EDIF=1
+Destination=Synplicity
+Expression=BusA(0 to 7)
+Order=[MSB:LSB]
+IO=0
+Address=256
+Data=16
+enByte=0
+ByteSize=9
+OutputEn=0
+ClockEn=0
+Optimization=Speed
+Reset=Sync
+Reset1=Sync
+Init=0
+MemFile=e:/cpuv1/rom.mem
+MemFormat=bin
+EnECC=0
+Pipeline=0
+Write=Normal
+init_data=0
+no_init=0
+
+[FilesGenerated]
+e:/cpuv1/rom.mem=mem
+
+[Command]
+cmd_line= -w -n rom -lang verilog -synth lse -bus_exp 7 -bb -arch xo2c00 -type romblk -device LCMXO2-4000HC -addr_width 8 -data_width 16 -num_words 256 -cascade -1 -memfile "e:/cpuv1/rom.mem" -memformat bin

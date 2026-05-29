@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="CPUv1" device="LCMXO2-4000HC-5FG484C" default_implementation="cpu_v1">
+    <Options/>
+    <Implementation title="cpu_v1" dir="cpu_v1" description="cpu_v1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="cpu"/>
+        <Source name="cpu.v" type="Verilog" type_short="Verilog">
+            <Options top_module="cpu"/>
+        </Source>
+        <Source name="sim.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
+            <Options/>
+        </Source>
+        <Source name="rom.ipx" type="IPX_Module" type_short="IPX">
+            <Options/>
+        </Source>
+        <Source name="CPUv1.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="sim/sim.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="CPUv11.sty"/>
+</BaliProject>
